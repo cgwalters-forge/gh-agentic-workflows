@@ -465,6 +465,9 @@ with the result — see the Roadmap entry below for why this exists.
 [`.agents/skills/onboard-repo/`](.agents/skills/onboard-repo/SKILL.md) is an
 opencode-compatible agent skill: the operational runbook for piloting this pipeline on a
 new consumer repo, referenced from the Roadmap items below.
+[`monthly-org-history`](.agents/skills/monthly-org-history/SKILL.md) and
+[`scripts/monthly-org-history.js`](scripts/monthly-org-history.js) collect a
+deterministic monthly organization snapshot and guide a human-reviewed history report.
 
 ## Prior art
 

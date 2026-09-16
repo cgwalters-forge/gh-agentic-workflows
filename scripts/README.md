@@ -2,6 +2,22 @@
 
 This directory contains utility scripts for setting up and managing the gh-agentic-workflows pipeline.
 
+## monthly-org-history.js
+
+Collects a deterministic JSON snapshot for one UTC month across an organization; it is
+used by the human-run [`monthly-org-history`](../.agents/skills/monthly-org-history/SKILL.md)
+skill to draft `history/YYYY-MM.md`.
+
+```bash
+node scripts/monthly-org-history.js ORG YYYY-MM --output /tmp/ORG-YYYY-MM-history.json
+```
+
+It requires authenticated `gh` and `unzip`. The snapshot is intentionally written to
+`/tmp` by default, not committed, and reports partial repository/artifact coverage.
+Current labels are snapshot state, not label history; explicit AI attribution markers
+are counted only on items created in the reported month. Output creation is exclusive:
+choose a new path rather than overwriting an existing snapshot.
+
 ## install-labels.js
 
 Installs the required labels on a repository for the issue → PR → review → fix → merge pipeline.
