@@ -13,7 +13,7 @@ labelled interpretation. Do not run it as an autonomous workflow or commit its J
 Confirm that `gh auth status` works and `unzip` is installed. Run:
 
 ```bash
-node scripts/monthly-org-history.js ORG YYYY-MM --output /tmp/ORG-YYYY-MM-history.json
+node scripts/monthly-org-history.js ORG YYYY-MM --output /tmp/ORG-YYYY-MM-history.json --bot 'bootc-bot[bot]'
 ```
 
 The script enumerates visible, non-archived, non-fork repositories in sorted order.
@@ -30,15 +30,23 @@ Treat `agent/code`, `agent/fixme`, and `agent/lgtm`, `agent/*` PR branches, and 
 the drafter/review/fix (plus ci/queue triage) workflow names as pipeline signals.
 They are not evidence of AI authorship. `Assisted-by: AI` and `Generated-by: AI` are
 counted only when explicitly retained in bodies of items **created in the month**.
-AIC is reported only from retained gh-aw usage artifacts attached to AIC-eligible
-(non-skipped) relevant in-window runs. A run's total means **agent plus threat-detection
-AIC**. The root `agent_usage.json` aggregate is authoritative for agent AIC;
-`agent/token_usage.jsonl` is only a fallback. The maximum cumulative total in exact
-`detection/token_usage.jsonl` is added once. Missing, expired, malformed, conflicting,
-or schema-unrecognized components mean **unknown**, never zero. Include eligible/skipped
-run coverage plus per-run provenance (`aicSource`/`aicRecords`) and the retention
-limitation. Commit-message markers are intentionally out of scope to avoid an API
-request per PR.
+AIC is reported from retained gh-aw usage artifacts attached to AIC-eligible
+(non-skipped) relevant in-window runs, with bot-comment metadata as a fallback. A run's
+total means **agent plus threat-detection AIC**. The root `agent_usage.json` aggregate
+is authoritative for agent AIC; `agent/token_usage.jsonl` is only a fallback. The
+maximum cumulative total in exact `detection/token_usage.jsonl` is added once. With
+`--bot LOGIN`, generated issue/PR
+conversation-comment footers provide a human-formatted agent-plus-threat AIC fallback
+only after artifact lookup fails; verified gh-aw hidden metadata only verifies the run
+identity and cannot supply AIC alone. A separate `⌖` value is added when present; without
+a breakdown, the footer's sole AIC value is the generated run total rather than an
+inferred zero-valued component. Artifacts remain authoritative. Submitted PR review
+bodies currently have no metadata, so they remain unknown rather than zero. Bot
+visibility and comment/artifact retention can limit this coverage. Missing, expired,
+malformed, conflicting, or schema-unrecognized required data mean **unknown**, never
+zero. Include eligible/skipped run coverage plus per-run provenance
+(`aicSource`/`aicRecords`) and the retention limitation. Commit-message markers are
+intentionally out of scope to avoid an API request per PR.
 
 ## Draft `history/YYYY-MM.md`
 
