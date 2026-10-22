@@ -24,6 +24,11 @@ permissions:
   contents: write
   pull-requests: write
 
+# A manual run must not race the weekly run while both update the same branch.
+concurrency:
+  group: upgrade-gh-aw
+  cancel-in-progress: false
+
 jobs:
   upgrade:
     runs-on: ubuntu-latest
@@ -52,7 +57,12 @@ jobs:
           # whatever ends up in .github/aw/gh-aw-version, which this step
           # now updates, so both stay in sync with what gets compiled below.
           gh extension install --force github/gh-aw
-          version=$(gh aw version | awk '{print $NF}')
+          version_output=$(gh aw version 2>&1)
+          if [[ ! "$version_output" =~ ^gh\ aw\ version\ v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            printf 'error: unable to parse gh-aw version output: %q\n' "$version_output" >&2
+            exit 1
+          fi
+          version=${version_output##* }
           echo "Installed gh-aw ${version}"
           printf '%s\n' "$version" >.github/aw/gh-aw-version
           echo "version=${version}" >>"$GITHUB_OUTPUT"
@@ -99,6 +109,12 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # force-with-lease needs the branch's remote-tracking ref when a
+          # prior upgrade PR already exists; checkout only fetched main.
+          remote_branch=$(git ls-remote --heads origin "refs/heads/${branch}")
+          if [ -n "$remote_branch" ]; then
+            git fetch --no-tags origin "+refs/heads/${branch}:refs/remotes/origin/${branch}"
+          fi
           git checkout -B "$branch"
           git commit -m "$title"
           git push --force-with-lease origin "$branch"
