@@ -67,6 +67,17 @@ canonical gh-aw sources; their matching `.lock.yml` files are generated artifact
 
 A few things here are non-obvious and were hard-won getting this to actually work:
 
+- **CI triage has a deterministic approval gate before the expensive agent job.** The
+  trusted default-branch helper re-fetches the exact failed `workflow_run`, resolves
+  regular PRs from its API association, commit association, and an exact head fallback,
+   then requires effective approvals. Queue triage parses only the single anchored,
+   branch-named target (`gh-readonly-queue/<base>/pr-<number>-<hex>`), not general
+   merge-group membership. It never reruns the failed merge-group Actions run: a transient
+   infrastructure failure can re-enqueue that approved, open, non-draft PR as a fresh
+   queue entry. The handler revalidates its node ID, head, base, approval, and queue state,
+   then allows at most two automatic re-enqueues per unchanged head (three total attempts).
+   Receipt comments authored by the configured App bot make that cap survive fresh runs.
+
 - **`github-app:` is safe at the `safe-outputs:` root — that's specific to how gh-aw
   handles App auth.** gh-aw mints the App installation token only inside the trusted
   safe-outputs job (after the untrusted agent job has already finished), so declaring
@@ -264,8 +275,9 @@ now at least readable by the agent, but it was never the intended recovery path.
 2. Register a GitHub App to act as the pipeline's bot identity (this must be a real App,
    not the default `GITHUB_TOKEN`, which cannot trigger subsequent workflows):
    - Go to Settings → Developer settings → GitHub Apps → New GitHub App.
-   - Grant repository permissions: Actions (Read & Write), Contents (Read & Write),
-     Issues (Read & Write), Pull requests (Read & Write), Workflows (Read & Write).
+    - Grant repository permissions: Actions (Read & Write), Contents (Read & Write),
+      Issues (Read & Write), Pull requests (Read & Write), Merge queues (Read & Write),
+      and Workflows (Read & Write).
      Metadata (Read) is auto-granted.
      Workflows is easy to miss since nothing in this repo's own `permissions:` blocks
      needs it — it's only required because `drafter.md`/`fix.md`/`upgrade.yml` push

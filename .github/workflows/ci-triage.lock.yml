@@ -1,5 +1,5 @@
-# gh-aw-metadata: {"schema_version":"v4","frontmatter_hash":"b525ed14d5ad09bbaf265d69ac565ef4cfb9c7605bc02e8bef0d23f6f60380ac","body_hash":"953554b3951d1245cf3a9a31699af27ab13390c9e596b565d1510b70ea212157","compiler_version":"v0.88.2","strict":true,"agent_id":"claude","agent_model":"claude-sonnet-4-5-20250929","engine_versions":{"claude":"2.1.247"}}
-# gh-aw-manifest: {"version":1,"secrets":["ANTHROPIC_API_KEY","COPILOT_GITHUB_TOKEN","GH_AW_APP_PRIVATE_KEY","GH_AW_DEFAULT_OTLP_HEADERS","GH_AW_GITHUB_MCP_SERVER_TOKEN","GH_AW_GITHUB_TOKEN","GITHUB_TOKEN"],"actions":[{"repo":"actions/cache/restore","sha":"55cc8345863c7cc4c66a329aec7e433d2d1c52a9","version":"v6.1.0"},{"repo":"actions/cache/save","sha":"55cc8345863c7cc4c66a329aec7e433d2d1c52a9","version":"v6.1.0"},{"repo":"actions/checkout","sha":"3d3c42e5aac5ba805825da76410c181273ba90b1","version":"v7.0.1"},{"repo":"actions/create-github-app-token","sha":"bcd2ba49218906704ab6c1aa796996da409d3eb1","version":"v3.2.0"},{"repo":"actions/download-artifact","sha":"3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c","version":"v8.0.1"},{"repo":"actions/github-script","sha":"3a2844b7e9c422d3c10d287c895573f7108da1b3","version":"v9.0.0"},{"repo":"actions/setup-node","sha":"820762786026740c76f36085b0efc47a31fe5020","version":"v7.0.0"},{"repo":"actions/upload-artifact","sha":"043fb46d1a93c77aae656e7c1c64a875d1fc6a0a","version":"v7.0.1"},{"repo":"github/gh-aw-actions/setup","sha":"9271a1804551c0dc4fb0085a97979950aa2f8489","version":"v0.88.2"}],"containers":[{"image":"ghcr.io/github/gh-aw-firewall/agent:0.28.12","digest":"sha256:390051be4ed1847f774fd8980b61d3a3523574c0175d00c3fc7cdf2002a88202","pinned_image":"ghcr.io/github/gh-aw-firewall/agent:0.28.12@sha256:390051be4ed1847f774fd8980b61d3a3523574c0175d00c3fc7cdf2002a88202"},{"image":"ghcr.io/github/gh-aw-firewall/api-proxy:0.28.12","digest":"sha256:d7d533d87c80d87ff91ac0e21e9299055c3beedff1536262b97ed700fb065a32","pinned_image":"ghcr.io/github/gh-aw-firewall/api-proxy:0.28.12@sha256:d7d533d87c80d87ff91ac0e21e9299055c3beedff1536262b97ed700fb065a32"},{"image":"ghcr.io/github/gh-aw-firewall/squid:0.28.12","digest":"sha256:52c34aca98d2a6833c329f1505912a6949c4fda16618c010c979bd59ea99254f","pinned_image":"ghcr.io/github/gh-aw-firewall/squid:0.28.12@sha256:52c34aca98d2a6833c329f1505912a6949c4fda16618c010c979bd59ea99254f"},{"image":"ghcr.io/github/gh-aw-mcpg:v0.4.15","digest":"sha256:60cd97533e93d8e7be36b979c0f08a70846189bda6190f28bbd6d427bc0d9b6e","pinned_image":"ghcr.io/github/gh-aw-mcpg:v0.4.15@sha256:60cd97533e93d8e7be36b979c0f08a70846189bda6190f28bbd6d427bc0d9b6e"},{"image":"ghcr.io/github/gh-aw-node","digest":"sha256:bac2192f6374d6262116399b34fc5e143d576f82719e90a18261cae7480f4d4e","pinned_image":"ghcr.io/github/gh-aw-node@sha256:bac2192f6374d6262116399b34fc5e143d576f82719e90a18261cae7480f4d4e"},{"image":"ghcr.io/github/github-mcp-server:v1.11.0","digest":"sha256:fbec75de11c255213fa08d80fb166abe73d851fff631c51c0079872967720699","pinned_image":"ghcr.io/github/github-mcp-server:v1.11.0@sha256:fbec75de11c255213fa08d80fb166abe73d851fff631c51c0079872967720699"}],"mcp_servers":[{"name":"github","tools":["get_commit","get_file_contents","get_latest_release","get_me","get_pull_request","get_pull_request_comments","get_pull_request_diff","get_pull_request_files","get_pull_request_review_comments","get_pull_request_reviews","get_pull_request_status","get_release_by_tag","get_tag","issue_read","list_branches","list_commits","list_issue_types","list_issues","list_pull_requests","list_releases","list_starred_repositories","list_tags","pull_request_read","search_code","search_issues","search_pull_requests","search_repositories"]},{"name":"safeoutputs","tools":["add_comment","missing_data","missing_tool","noop","workflow_rerun"]}]}
+# gh-aw-metadata: {"schema_version":"v4","frontmatter_hash":"7ac5ce537848cfdd9b9dac5116982c30752eff522d1dd2bf2b4f894f9e31b32d","body_hash":"10ee043f4328ef724d8488c1f24dd1c75d8a564b6b7f538e578bbf4f2d9a3a82","compiler_version":"v0.88.2","strict":true,"agent_id":"claude","agent_model":"claude-sonnet-4-5-20250929","engine_versions":{"claude":"2.1.247"}}
+# gh-aw-manifest: {"version":1,"secrets":["ANTHROPIC_API_KEY","COPILOT_GITHUB_TOKEN","GH_AW_APP_PRIVATE_KEY","GH_AW_DEFAULT_OTLP_HEADERS","GH_AW_GITHUB_MCP_SERVER_TOKEN","GH_AW_GITHUB_TOKEN","GITHUB_TOKEN"],"actions":[{"repo":"actions/cache/restore","sha":"55cc8345863c7cc4c66a329aec7e433d2d1c52a9","version":"v6.1.0"},{"repo":"actions/cache/save","sha":"55cc8345863c7cc4c66a329aec7e433d2d1c52a9","version":"v6.1.0"},{"repo":"actions/checkout","sha":"3d3c42e5aac5ba805825da76410c181273ba90b1","version":"v7.0.1"},{"repo":"actions/create-github-app-token","sha":"bcd2ba49218906704ab6c1aa796996da409d3eb1","version":"v3.2.0"},{"repo":"actions/download-artifact","sha":"3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c","version":"v8.0.1"},{"repo":"actions/github-script","sha":"3a2844b7e9c422d3c10d287c895573f7108da1b3","version":"v9.0.0"},{"repo":"actions/setup-node","sha":"820762786026740c76f36085b0efc47a31fe5020","version":"v7.0.0"},{"repo":"actions/upload-artifact","sha":"043fb46d1a93c77aae656e7c1c64a875d1fc6a0a","version":"v7.0.1"},{"repo":"github/gh-aw-actions/setup","sha":"9271a1804551c0dc4fb0085a97979950aa2f8489","version":"v0.88.2"}],"containers":[{"image":"ghcr.io/github/gh-aw-firewall/agent:0.28.12","digest":"sha256:390051be4ed1847f774fd8980b61d3a3523574c0175d00c3fc7cdf2002a88202","pinned_image":"ghcr.io/github/gh-aw-firewall/agent:0.28.12@sha256:390051be4ed1847f774fd8980b61d3a3523574c0175d00c3fc7cdf2002a88202"},{"image":"ghcr.io/github/gh-aw-firewall/api-proxy:0.28.12","digest":"sha256:d7d533d87c80d87ff91ac0e21e9299055c3beedff1536262b97ed700fb065a32","pinned_image":"ghcr.io/github/gh-aw-firewall/api-proxy:0.28.12@sha256:d7d533d87c80d87ff91ac0e21e9299055c3beedff1536262b97ed700fb065a32"},{"image":"ghcr.io/github/gh-aw-firewall/squid:0.28.12","digest":"sha256:52c34aca98d2a6833c329f1505912a6949c4fda16618c010c979bd59ea99254f","pinned_image":"ghcr.io/github/gh-aw-firewall/squid:0.28.12@sha256:52c34aca98d2a6833c329f1505912a6949c4fda16618c010c979bd59ea99254f"},{"image":"ghcr.io/github/gh-aw-mcpg:v0.4.15","digest":"sha256:60cd97533e93d8e7be36b979c0f08a70846189bda6190f28bbd6d427bc0d9b6e","pinned_image":"ghcr.io/github/gh-aw-mcpg:v0.4.15@sha256:60cd97533e93d8e7be36b979c0f08a70846189bda6190f28bbd6d427bc0d9b6e"},{"image":"ghcr.io/github/gh-aw-node","digest":"sha256:bac2192f6374d6262116399b34fc5e143d576f82719e90a18261cae7480f4d4e","pinned_image":"ghcr.io/github/gh-aw-node@sha256:bac2192f6374d6262116399b34fc5e143d576f82719e90a18261cae7480f4d4e"},{"image":"ghcr.io/github/github-mcp-server:v1.11.0","digest":"sha256:fbec75de11c255213fa08d80fb166abe73d851fff631c51c0079872967720699","pinned_image":"ghcr.io/github/github-mcp-server:v1.11.0@sha256:fbec75de11c255213fa08d80fb166abe73d851fff631c51c0079872967720699"}],"mcp_servers":[{"name":"github","tools":["actions_get","actions_list","get_commit","get_file_contents","get_job_logs","get_latest_release","get_me","get_pull_request","get_pull_request_comments","get_pull_request_diff","get_pull_request_files","get_pull_request_review_comments","get_pull_request_reviews","get_pull_request_status","get_release_by_tag","get_tag","issue_read","list_branches","list_commits","list_issue_types","list_issues","list_pull_requests","list_releases","list_starred_repositories","list_tags","pull_request_read","search_code","search_issues","search_pull_requests","search_repositories"]},{"name":"safeoutputs","tools":["add_comment","missing_data","missing_tool","noop","workflow_rerun"]}]}
 # This file was automatically generated by gh-aw (v0.88.2). DO NOT EDIT. To debug this workflow, load the skill at https://github.com/github/gh-aw/blob/main/debug.md
 #
 #    ___                   _   _
@@ -31,8 +31,8 @@
 # no cross-PR ledger — the merge queue's heavier suite is where recurring
 # flake classes are worth tracking; this one is meant to give a PR author
 # fast, disposable feedback on their own branch's CI run. Clearly transient
-# infrastructure failures automatically rerun failed jobs, with a cap of
-# three total attempts.
+# infrastructure failures on approved PRs may automatically rerun failed jobs,
+# with a cap of three total attempts.
 #
 # Resolved workflow manifest:
 #   Imports:
@@ -72,10 +72,15 @@ name: "PR CI Failure Analyzer"
 on:
   # bots: # Bots processed as bot check in pre-activation job
   # - ${{ vars.GH_AW_APP_BOT_SLUG }} # Bots processed as bot check in pre-activation job
+  # roles: # Roles processed as role check in pre-activation job
+  # - admin # Roles processed as role check in pre-activation job
+  # - maintainer # Roles processed as role check in pre-activation job
+  # - maintain # Roles processed as role check in pre-activation job
+  # - write # Roles processed as role check in pre-activation job
+  # - triage # Roles processed as role check in pre-activation job
+  # - read # Roles processed as role check in pre-activation job
   workflow_run:
     # zizmor: ignore[dangerous-triggers] - workflow_run trigger is secured with role and fork validation
-    branches:
-      - main
     types:
       - completed
     workflows:
@@ -98,7 +103,9 @@ env:
 
 jobs:
   activation:
-    needs: pre_activation
+    needs:
+      - approval_gate
+      - pre_activation
     # zizmor: ignore[dangerous-triggers] - workflow_run trigger is secured with role and fork validation
     if: >
       (needs.pre_activation.outputs.activated == 'true' && (github.event.workflow_run.conclusion == 'failure' &&
@@ -294,6 +301,7 @@ jobs:
           GH_AW_EXPR_802A9F6A: ${{ github.event.issue.number || (fromJSON(github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}').item_type == 'issue' && fromJSON(github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}').item_number) }}
           GH_AW_EXPR_FF1D34CE: ${{ github.event.comment.id || fromJSON(github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}').comment_id }}
           GH_AW_GITHUB_ACTOR: ${{ github.actor }}
+          GH_AW_GITHUB_EVENT_WORKFLOW_RUN_ID: ${{ github.event.workflow_run.id }}
           GH_AW_GITHUB_REPOSITORY: ${{ github.repository }}
           GH_AW_GITHUB_RUN_ID: ${{ github.run_id }}
           GH_AW_GITHUB_WORKSPACE: ${{ github.workspace }}
@@ -315,6 +323,7 @@ jobs:
         env:
           GH_AW_PROMPT: ${{ runner.temp }}/gh-aw/aw-prompts/prompt.txt
           GH_AW_ENGINE_ID: "claude"
+          GH_AW_GITHUB_EVENT_WORKFLOW_RUN_ID: ${{ github.event.workflow_run.id }}
         with:
           script: |
             const path = require('path');
@@ -332,10 +341,13 @@ jobs:
           GH_AW_EXPR_802A9F6A: ${{ github.event.issue.number || (fromJSON(github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}').item_type == 'issue' && fromJSON(github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}').item_number) }}
           GH_AW_EXPR_FF1D34CE: ${{ github.event.comment.id || fromJSON(github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}').comment_id }}
           GH_AW_GITHUB_ACTOR: ${{ github.actor }}
+          GH_AW_GITHUB_EVENT_WORKFLOW_RUN_ID: ${{ github.event.workflow_run.id }}
           GH_AW_GITHUB_REPOSITORY: ${{ github.repository }}
           GH_AW_GITHUB_RUN_ID: ${{ github.run_id }}
           GH_AW_GITHUB_WORKSPACE: ${{ github.workspace }}
           GH_AW_MCP_CLI_SERVERS_LIST: '- `safeoutputs` — run `safeoutputs --help` to see available tools'
+          GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_APPROVED: ${{ needs.approval_gate.outputs.approved }}
+          GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_REASON: ${{ needs.approval_gate.outputs.reason }}
           GH_AW_NEEDS_PRE_ACTIVATION_OUTPUTS_ACTIVATED: ${{ needs.pre_activation.outputs.activated }}
         with:
           script: |
@@ -355,10 +367,13 @@ jobs:
                 GH_AW_EXPR_802A9F6A: process.env.GH_AW_EXPR_802A9F6A,
                 GH_AW_EXPR_FF1D34CE: process.env.GH_AW_EXPR_FF1D34CE,
                 GH_AW_GITHUB_ACTOR: process.env.GH_AW_GITHUB_ACTOR,
+                GH_AW_GITHUB_EVENT_WORKFLOW_RUN_ID: process.env.GH_AW_GITHUB_EVENT_WORKFLOW_RUN_ID,
                 GH_AW_GITHUB_REPOSITORY: process.env.GH_AW_GITHUB_REPOSITORY,
                 GH_AW_GITHUB_RUN_ID: process.env.GH_AW_GITHUB_RUN_ID,
                 GH_AW_GITHUB_WORKSPACE: process.env.GH_AW_GITHUB_WORKSPACE,
                 GH_AW_MCP_CLI_SERVERS_LIST: process.env.GH_AW_MCP_CLI_SERVERS_LIST,
+                GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_APPROVED: process.env.GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_APPROVED,
+                GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_REASON: process.env.GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_REASON,
                 GH_AW_NEEDS_PRE_ACTIVATION_OUTPUTS_ACTIVATED: process.env.GH_AW_NEEDS_PRE_ACTIVATION_OUTPUTS_ACTIVATED
               }
             });
@@ -396,8 +411,10 @@ jobs:
           retention-days: 1
 
   agent:
-    needs: activation
-    if: needs.activation.outputs.daily_ai_credits_exceeded != 'true'
+    needs:
+      - activation
+      - approval_gate
+    if: (needs.activation.outputs.daily_ai_credits_exceeded != 'true') && (needs.approval_gate.outputs.approved == 'true')
     runs-on: ubuntu-latest
     permissions:
       actions: read
@@ -493,13 +510,6 @@ jobs:
         with:
           name: activation
           path: /tmp/gh-aw
-      - env:
-          EVENT_RUN_ID: ${{ github.event.workflow_run.id }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPO: ${{ github.repository }}
-        name: Pre-fetch PR CI failure data
-        run: "set -euo pipefail\n\nBASE_DIR=\"/tmp/gh-aw/agent/ci-triage\"\nLOG_DIR=\"$BASE_DIR/logs\"\nHINTS_DIR=\"$BASE_DIR/hints\"\nmkdir -p \"$LOG_DIR\" \"$HINTS_DIR\"\n\nRUN_ID=\"$EVENT_RUN_ID\"\n\necho \"=== CI Triage: pre-fetching data for run $RUN_ID ===\"\n\n# 1. Resolve the run itself.\ngh api \"repos/$REPO/actions/runs/$RUN_ID\" \\\n  --jq '{id, run_attempt, event, conclusion, head_branch, head_sha, html_url, name, run_number}' \\\n  > \"$BASE_DIR/run.json\"\n\nHEAD_SHA=$(jq -r '.head_sha' \"$BASE_DIR/run.json\")\nRUN_HTML_URL=$(jq -r '.html_url' \"$BASE_DIR/run.json\")\n\n# 2. Failed/cancelled jobs and their failed step names.\ngh api --paginate \"repos/$REPO/actions/runs/$RUN_ID/jobs\" \\\n  --jq '[.jobs[] | select(.conclusion == \"failure\" or .conclusion == \"cancelled\") |\n         {id, name, conclusion, html_url,\n          failed_steps: [.steps[]? | select(.conclusion == \"failure\") | .name]}]' \\\n  > \"$BASE_DIR/failed-jobs.json\"\n\nFAILED_COUNT=$(jq 'length' \"$BASE_DIR/failed-jobs.json\")\necho \"Found $FAILED_COUNT failed/cancelled job(s) in run $RUN_ID\"\n\n# 3. Download each failed job's log, keyed on the numeric job id (never\n# the untrusted job name), and cap what the agent sees to grepped\n# error-indicator lines plus a tail, so a job that died without\n# printing an error line is still diagnosable.\nERROR_PATTERN='error[: ]|ERROR|FAIL|panic:|fatal[: ]|assertion|Cannot download|502|503|timed out|No space left|Killed|OOM|rate limit'\n\nif [ \"$FAILED_COUNT\" -gt 0 ]; then\n  jq -r '.[].id' \"$BASE_DIR/failed-jobs.json\" | while read -r JOB_ID; do\n    LOG_FILE=\"$LOG_DIR/job-${JOB_ID}.log\"\n    echo \"Downloading log for job $JOB_ID...\"\n    # --allow-escape-sequences: raw job logs almost always contain\n    # ANSI color codes, and gh refuses to print a response\n    # containing terminal escape sequences without this flag --\n    # without it every download here fails and this falls through\n    # to the \"(log download failed or log expired)\" placeholder\n    # below, confirmed live.\n    if gh api --allow-escape-sequences \"repos/$REPO/actions/jobs/$JOB_ID/logs\" > \"$LOG_FILE\" 2>/dev/null; then\n      # cut -c bounds each line's *length* before head/tail bound the\n      # line *count* -- the log content is untrusted PR-controlled\n      # text, and a single minified JSON or base64 blob on one line\n      # could otherwise dump megabytes into the agent's context.\n      grep -inE \"$ERROR_PATTERN\" \"$LOG_FILE\" 2>/dev/null | cut -c 1-1000 | head -40 \\\n        > \"$HINTS_DIR/job-${JOB_ID}.txt\" || true\n      tail -100 \"$LOG_FILE\" | cut -c 1-1000 > \"$HINTS_DIR/job-${JOB_ID}-tail.txt\" || true\n    else\n      echo \"(log download failed or log expired)\" | tee \"$LOG_FILE\" \\\n        \"$HINTS_DIR/job-${JOB_ID}.txt\" \"$HINTS_DIR/job-${JOB_ID}-tail.txt\" > /dev/null\n    fi\n  done\nfi\n\n# 4. Resolve the affected PR(s) — deliberately *not* by parsing\n# head_branch the way queue-triage.md parses\n# gh-readonly-queue/<base>/pr-<n>-<sha>: a plain PR's branch can be\n# named anything. Instead, use the commit-associated-PRs API, which\n# resolves the same way whether the PR is same-repo or\n# fork-originated — a single deterministic call rather than a\n# two-path branch in this script (github.event.workflow_run.\n# pull_requests[] in the event payload is empty for fork PRs, so it's\n# deliberately not used here at all).\ngh api \"repos/$REPO/commits/$HEAD_SHA/pulls\" \\\n  --jq '[.[] | select(.state == \"open\")]' \\\n  > \"$BASE_DIR/candidate-prs.json\"\n\n# A candidate is only \"verified\" if it's still open *and* its\n# current head SHA still matches the commit this run analyzed. A PR\n# can move on to a newer commit while this analysis is still running\n# (e.g. the contributor pushed again before CI on the old commit\n# finished) — commenting about a now-stale commit's failure on the\n# PR's current state would be confusing at best, and actively wrong\n# if the newer push already fixed it. Unverified/stale candidates\n# are never commented on; a matching in-flight (or future) analysis\n# for the newer commit is what handles those, same\n# \"unverified candidates are never commented on\" rule\n# queue-triage.md follows for its own PR resolution.\necho \"[]\" > \"$BASE_DIR/prs.json\"\n: > \"$BASE_DIR/stale-prs.txt\"\nVERIFIED=\"[]\"\nCANDIDATES=$(jq -r '.[].number' \"$BASE_DIR/candidate-prs.json\")\nfor N in $CANDIDATES; do\n  CURRENT_SHA=$(gh api \"repos/$REPO/pulls/$N\" --jq '.head.sha' 2>/dev/null || echo '')\n  if [ -z \"$CURRENT_SHA\" ]; then\n    echo \"  PR #$N: not found via API, dropping (unverified candidates are never commented on)\"\n    continue\n  fi\n  if [ \"$CURRENT_SHA\" != \"$HEAD_SHA\" ]; then\n    echo \"  PR #$N: stale (analyzed sha $HEAD_SHA, current head is $CURRENT_SHA) — superseded by a newer push, skipping\" \\\n      | tee -a \"$BASE_DIR/stale-prs.txt\"\n    continue\n  fi\n  ENTRY=$(jq -n --argjson n \"$N\" '{number: $n}')\n  VERIFIED=$(jq --argjson e \"$ENTRY\" '. + [$e]' <<<\"$VERIFIED\")\n  echo \"  PR #$N: verified (head sha still matches $HEAD_SHA)\"\ndone\necho \"$VERIFIED\" > \"$BASE_DIR/prs.json\"\n\n# 5. Human-readable summary — the agent is told to read this first.\n{\n  echo \"=== CI Triage Pre-Analysis ===\"\n  echo \"Run: $(jq -r '.id' \"$BASE_DIR/run.json\") ($RUN_HTML_URL), attempt $(jq -r '.run_attempt' \"$BASE_DIR/run.json\")\"\n  echo \"Workflow: $(jq -r '.name' \"$BASE_DIR/run.json\") run #$(jq -r '.run_number' \"$BASE_DIR/run.json\")\"\n  echo \"Event: $(jq -r '.event' \"$BASE_DIR/run.json\")  Conclusion: $(jq -r '.conclusion' \"$BASE_DIR/run.json\")\"\n  echo \"Head branch: $(jq -r '.head_branch' \"$BASE_DIR/run.json\")\"\n  echo \"Head SHA: $HEAD_SHA\"\n  echo \"\"\n  echo \"Failed/cancelled jobs ($BASE_DIR/failed-jobs.json): $FAILED_COUNT\"\n  if [ \"$FAILED_COUNT\" -gt 0 ]; then\n    jq -r '.[] | \"  Job \\(.id) [\\(.conclusion)]: \\(.name)\\n    URL: \\(.html_url)\\n    Failed steps: \\(.failed_steps | join(\", \"))\"' \\\n      \"$BASE_DIR/failed-jobs.json\"\n  else\n    echo \"  (none — nothing to analyze; call the noop safe-output and stop)\"\n  fi\n  echo \"\"\n  echo \"Downloaded logs and hints:\"\n  for LOG_FILE in \"$LOG_DIR\"/job-*.log; do\n    [ -f \"$LOG_FILE\" ] || continue\n    JOB_ID=$(basename \"$LOG_FILE\" .log); JOB_ID=${JOB_ID#job-}\n    echo \"  $LOG_FILE ($(wc -l < \"$LOG_FILE\") lines)\"\n    echo \"    hints: $HINTS_DIR/job-${JOB_ID}.txt ($(wc -l < \"$HINTS_DIR/job-${JOB_ID}.txt\" 2>/dev/null || echo 0) matches)\"\n    echo \"    tail:  $HINTS_DIR/job-${JOB_ID}-tail.txt\"\n  done\n  echo \"\"\n  echo \"Verified PR(s) ($BASE_DIR/prs.json):\"\n  PR_COUNT=$(jq 'length' \"$BASE_DIR/prs.json\")\n  CANDIDATE_COUNT=$(jq 'length' \"$BASE_DIR/candidate-prs.json\")\n  if [ \"$PR_COUNT\" -gt 0 ]; then\n    jq -r '.[] | \"  PR #\\(.number)\"' \"$BASE_DIR/prs.json\"\n  elif [ \"$CANDIDATE_COUNT\" -gt 0 ]; then\n    # Every candidate existed but moved on to a newer commit — that's\n    # an expected, non-error outcome (see stale-prs.txt below), not a\n    # missing-data case: call noop, not missing-data.\n    echo \"  (none verified — every candidate PR was stale; call noop, not missing-data)\"\n  else\n    # No PR is associated with this commit at all — genuinely\n    # unexpected for a pull_request-triggered CI run, worth a\n    # missing-data report rather than silently no-oping.\n    echo \"  (none verified — no PR is associated with this commit at all; call missing-data)\"\n  fi\n  if [ -s \"$BASE_DIR/stale-prs.txt\" ]; then\n    echo \"\"\n    echo \"Stale candidate(s) (superseded by a newer push, not commented on):\"\n    cat \"$BASE_DIR/stale-prs.txt\"\n  fi\n} | tee \"$BASE_DIR/summary.txt\"\n\necho \"\"\necho \"Pre-analysis complete. Agent should start with $BASE_DIR/summary.txt\""
-
       - name: Configure Git credentials
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
@@ -797,7 +807,7 @@ jobs:
           export MCP_GATEWAY_DOCKER_COMMAND='docker run -i --rm --network bridge -p 127.0.0.1:'"${MCP_GATEWAY_PORT}"':'"${MCP_GATEWAY_PORT}"' --name awmg-mcpg --add-host host.docker.internal:host-gateway --user '"${MCP_GATEWAY_UID}"':'"${MCP_GATEWAY_GID}"' --group-add '"${DOCKER_SOCK_GID}"' -v '"${DOCKER_SOCK_PATH}"':/var/run/docker.sock -e MCP_GATEWAY_PORT -e MCP_GATEWAY_DOMAIN -e MCP_GATEWAY_AGENT_ID -e MCP_GATEWAY_PAYLOAD_DIR -e MCP_GATEWAY_PAYLOAD_SIZE_THRESHOLD -e DOCKER_HOST=unix:///var/run/docker.sock -e DEBUG -e MCP_GATEWAY_LOG_DIR -e GH_AW_MCP_LOG_DIR -e GH_AW_SAFE_OUTPUTS -e GH_AW_SAFE_OUTPUTS_CONFIG_PATH -e GH_AW_SAFE_OUTPUTS_TOOLS_PATH -e GH_AW_PR_HEAD_BASE_BRANCH -e GH_AW_PR_HEAD_BASE_SHA -e GH_AW_PR_HEAD_BASE_REPO -e GH_AW_PR_HEAD_BASE_PR_NUMBER -e GH_AW_PR_HEAD_BASE_REF -e GH_AW_PR_HEAD_REPO -e GH_AW_POLICY_ALLOW_CREATE_PULL_REQUEST -e GH_AW_ASSETS_BRANCH -e GH_AW_ASSETS_MAX_SIZE_KB -e GH_AW_ASSETS_ALLOWED_EXTS -e DEFAULT_BRANCH -e GITHUB_MCP_SERVER_TOKEN -e GITHUB_MCP_GUARD_MIN_INTEGRITY -e GITHUB_MCP_GUARD_REPOS -e GH_AW_SINK_VISIBILITY -e GITHUB_REPOSITORY -e GITHUB_SERVER_URL -e GITHUB_SHA -e GITHUB_WORKSPACE -e GITHUB_TOKEN -e GITHUB_RUN_ID -e GITHUB_RUN_NUMBER -e GITHUB_RUN_ATTEMPT -e GITHUB_JOB -e GITHUB_ACTION -e GITHUB_EVENT_NAME -e GITHUB_EVENT_PATH -e GITHUB_ACTOR -e GITHUB_ACTOR_ID -e GITHUB_TRIGGERING_ACTOR -e GITHUB_WORKFLOW -e GITHUB_WORKFLOW_REF -e GITHUB_WORKFLOW_SHA -e GITHUB_REF -e GITHUB_REF_NAME -e GITHUB_REF_TYPE -e GITHUB_HEAD_REF -e GITHUB_BASE_REF -e RUNNER_TEMP -e RUNNER_TOOL_CACHE -e MCP_GATEWAY_ALLOWED_MOUNT_ROOTS -e GITHUB_AW_OTEL_TRACE_ID -e GITHUB_AW_OTEL_PARENT_SPAN_ID -e OTEL_EXPORTER_OTLP_HEADERS -v /tmp/gh-aw/mcp-payloads:/tmp/gh-aw/mcp-payloads:rw -v /opt:/opt:ro -v /tmp:/tmp:rw -v '"${GITHUB_WORKSPACE}"':'"${GITHUB_WORKSPACE}"':rw -v '"${RUNNER_TEMP}"'/gh-aw/safeoutputs:'"${RUNNER_TEMP}"'/gh-aw/safeoutputs:rw ghcr.io/github/gh-aw-mcpg:v0.4.15'
 
           GH_AW_NODE=$(which node 2>/dev/null || command -v node 2>/dev/null || echo node)
-          cat << GH_AW_MCP_CONFIG_b198db69d16256c8_EOF | "$GH_AW_NODE" "${RUNNER_TEMP}/gh-aw/actions/start_mcp_gateway.cjs"
+          cat << GH_AW_MCP_CONFIG_453c90929b15eae7_EOF | "$GH_AW_NODE" "${RUNNER_TEMP}/gh-aw/actions/start_mcp_gateway.cjs"
           {
             "mcpServers": {
               "github": {
@@ -807,7 +817,7 @@ jobs:
                   "GITHUB_HOST": "$GITHUB_SERVER_URL",
                   "GITHUB_PERSONAL_ACCESS_TOKEN": "$GITHUB_MCP_SERVER_TOKEN",
                   "GITHUB_READ_ONLY": "1",
-                  "GITHUB_TOOLSETS": "context,repos,issues,pull_requests"
+                  "GITHUB_TOOLSETS": "context,repos,issues,pull_requests,actions"
                 },
                 "guard-policies": {
                   "allow-only": {
@@ -873,7 +883,7 @@ jobs:
               }
             }
           }
-          GH_AW_MCP_CONFIG_b198db69d16256c8_EOF
+          GH_AW_MCP_CONFIG_453c90929b15eae7_EOF
       - name: Mount MCP servers as CLIs
         id: mount-mcp-clis
         continue-on-error: true
@@ -1200,6 +1210,8 @@ jobs:
           path: |
             /tmp/gh-aw/aw-prompts/prompt.txt
             /tmp/gh-aw/mcp-logs/
+            /tmp/gh-aw/proxy-logs/
+            !/tmp/gh-aw/proxy-logs/proxy-tls/
             /tmp/gh-aw/agent_usage.json
             /tmp/gh-aw/agent-stdio.log
             /tmp/gh-aw/pre-agent-audit.txt
@@ -1217,10 +1229,52 @@ jobs:
             /tmp/gh-aw/sandbox/firewall/awf-reflect.json
           if-no-files-found: ignore
 
+  approval_gate:
+    needs: pre_activation
+    if: needs.pre_activation.outputs.activated == 'true'
+    runs-on: ubuntu-slim
+    permissions:
+      actions: read
+      contents: read
+      pull-requests: read
+    timeout-minutes: 5
+    outputs:
+      approved: ${{ steps.gate.outputs.approved }}
+      reason: ${{ steps.gate.outputs.reason }}
+    steps:
+      - name: Configure GH_HOST for enterprise compatibility
+        id: ghes-host-config
+        shell: bash
+        run: | # zizmor: ignore[github-env] - GITHUB_SERVER_URL is set by GitHub Actions, not user input.
+          # Derive GH_HOST from GITHUB_SERVER_URL so the gh CLI targets the correct
+          # GitHub instance (GHES/GHEC). On github.com this is a harmless no-op.
+          GH_HOST="${GITHUB_SERVER_URL#https://}"
+          GH_HOST="${GH_HOST#http://}"
+          echo "GH_HOST=${GH_HOST}" >> "$GITHUB_ENV"
+      - name: Checkout trusted approval gate
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1 (source v7)
+        with:
+          persist-credentials: false
+          ref: ${{ github.event.repository.default_branch }}
+          sparse-checkout: .github/workflows/shared
+          token: ${{ github.token }}
+      - name: Verify pull request approval
+        id: gate
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0 (source v9)
+        with:
+          github-token: ${{ github.token }}
+          script: |
+            const approvalGate = require(`${process.env.GITHUB_WORKSPACE}/.github/workflows/shared/approval-gate.cjs`);
+            await approvalGate({
+              core, context, expectedEvent: 'pull_request', github,
+              monitoredWorkflow: 'CI', monitoredWorkflowPath: '.github/workflows/ci.yml',
+            });
+
   conclusion:
     needs:
       - activation
       - agent
+      - approval_gate
       - detection
       - safe_outputs
       - workflow_rerun
@@ -1613,7 +1667,7 @@ jobs:
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         env:
           WORKFLOW_NAME: "PR CI Failure Analyzer"
-          WORKFLOW_DESCRIPTION: "PR CI failure analyzer. When the monitored CI workflow completes with a\nfailure on a regular (non-merge-queue) pull request, this agent downloads\nthe failed job's logs, classifies the failure as a flake, a real\nregression, or unclear, and comments on the affected PR(s) with a verdict\nand a recommended action. Unlike queue-triage.md, this workflow maintains\nno cross-PR ledger — the merge queue's heavier suite is where recurring\nflake classes are worth tracking; this one is meant to give a PR author\nfast, disposable feedback on their own branch's CI run. Clearly transient\ninfrastructure failures automatically rerun failed jobs, with a cap of\nthree total attempts."
+          WORKFLOW_DESCRIPTION: "PR CI failure analyzer. When the monitored CI workflow completes with a\nfailure on a regular (non-merge-queue) pull request, this agent downloads\nthe failed job's logs, classifies the failure as a flake, a real\nregression, or unclear, and comments on the affected PR(s) with a verdict\nand a recommended action. Unlike queue-triage.md, this workflow maintains\nno cross-PR ledger — the merge queue's heavier suite is where recurring\nflake classes are worth tracking; this one is meant to give a PR author\nfast, disposable feedback on their own branch's CI run. Clearly transient\ninfrastructure failures on approved PRs may automatically rerun failed jobs,\nwith a cap of three total attempts."
           HAS_PATCH: ${{ needs.agent.outputs.has_patch }}
           GH_AW_DETECTION_CONTINUE_ON_ERROR: "true"
           GH_AW_DETECTION_SKIP_PROMPT_SUMMARY: "true"
@@ -1677,7 +1731,7 @@ jobs:
           RUNNER_TEMP: ${{ runner.temp }}
           TRACEPARENT: ${{ env.GITHUB_AW_OTEL_TRACE_ID != '' && env.GITHUB_AW_OTEL_PARENT_SPAN_ID != '' && format('00-{0}-{1}-01', env.GITHUB_AW_OTEL_TRACE_ID, env.GITHUB_AW_OTEL_PARENT_SPAN_ID) || '' }}
           WORKFLOW_NAME: "PR CI Failure Analyzer"
-          WORKFLOW_DESCRIPTION: "PR CI failure analyzer. When the monitored CI workflow completes with a\nfailure on a regular (non-merge-queue) pull request, this agent downloads\nthe failed job's logs, classifies the failure as a flake, a real\nregression, or unclear, and comments on the affected PR(s) with a verdict\nand a recommended action. Unlike queue-triage.md, this workflow maintains\nno cross-PR ledger — the merge queue's heavier suite is where recurring\nflake classes are worth tracking; this one is meant to give a PR author\nfast, disposable feedback on their own branch's CI run. Clearly transient\ninfrastructure failures automatically rerun failed jobs, with a cap of\nthree total attempts."
+          WORKFLOW_DESCRIPTION: "PR CI failure analyzer. When the monitored CI workflow completes with a\nfailure on a regular (non-merge-queue) pull request, this agent downloads\nthe failed job's logs, classifies the failure as a flake, a real\nregression, or unclear, and comments on the affected PR(s) with a verdict\nand a recommended action. Unlike queue-triage.md, this workflow maintains\nno cross-PR ledger — the merge queue's heavier suite is where recurring\nflake classes are worth tracking; this one is meant to give a PR author\nfast, disposable feedback on their own branch's CI run. Clearly transient\ninfrastructure failures on approved PRs may automatically rerun failed jobs,\nwith a cap of three total attempts."
           HAS_PATCH: ${{ needs.agent.outputs.has_patch }}
           GH_AW_DETECTION_CONTINUE_ON_ERROR: "true"
         run: |
@@ -1792,7 +1846,7 @@ jobs:
         id: check_membership
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         env:
-          GH_AW_REQUIRED_ROLES: "admin,maintainer,write"
+          GH_AW_REQUIRED_ROLES: "admin,maintainer,maintain,write,triage,read"
           GH_AW_ALLOWED_BOTS: "${{ vars.GH_AW_APP_BOT_SLUG }}"
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -1967,6 +2021,7 @@ jobs:
         with:
           client-id: ${{ vars.GH_AW_APP_CLIENT_ID }}
           permission-actions: write
+          permission-pull-requests: read
           private-key: ${{ secrets.GH_AW_APP_PRIVATE_KEY }}
       - name: Validate and rerun monitored workflow
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0 (source v9)

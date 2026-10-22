@@ -1,5 +1,5 @@
-# gh-aw-metadata: {"schema_version":"v4","frontmatter_hash":"19da74da217dac1ce20a1aa65b8cdde56462eabf7225928071b4d64f3ce9e2a5","body_hash":"da112d57a8a418784c8ef7ea5bd3b77f7eb86ac0a682a9a98adb1894b8af7deb","compiler_version":"v0.88.2","strict":true,"agent_id":"claude","agent_model":"claude-sonnet-4-5-20250929","engine_versions":{"claude":"2.1.247"}}
-# gh-aw-manifest: {"version":1,"secrets":["ANTHROPIC_API_KEY","COPILOT_GITHUB_TOKEN","GH_AW_APP_PRIVATE_KEY","GH_AW_DEFAULT_OTLP_HEADERS","GH_AW_GITHUB_MCP_SERVER_TOKEN","GH_AW_GITHUB_TOKEN","GITHUB_TOKEN"],"actions":[{"repo":"actions/cache/restore","sha":"55cc8345863c7cc4c66a329aec7e433d2d1c52a9","version":"v6.1.0"},{"repo":"actions/cache/save","sha":"55cc8345863c7cc4c66a329aec7e433d2d1c52a9","version":"v6.1.0"},{"repo":"actions/checkout","sha":"3d3c42e5aac5ba805825da76410c181273ba90b1","version":"v7.0.1"},{"repo":"actions/create-github-app-token","sha":"bcd2ba49218906704ab6c1aa796996da409d3eb1","version":"v3.2.0"},{"repo":"actions/download-artifact","sha":"3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c","version":"v8.0.1"},{"repo":"actions/github-script","sha":"3a2844b7e9c422d3c10d287c895573f7108da1b3","version":"v9.0.0"},{"repo":"actions/setup-node","sha":"820762786026740c76f36085b0efc47a31fe5020","version":"v7.0.0"},{"repo":"actions/upload-artifact","sha":"043fb46d1a93c77aae656e7c1c64a875d1fc6a0a","version":"v7.0.1"},{"repo":"github/gh-aw-actions/setup","sha":"9271a1804551c0dc4fb0085a97979950aa2f8489","version":"v0.88.2"}],"containers":[{"image":"ghcr.io/github/gh-aw-firewall/agent:0.28.12","digest":"sha256:390051be4ed1847f774fd8980b61d3a3523574c0175d00c3fc7cdf2002a88202","pinned_image":"ghcr.io/github/gh-aw-firewall/agent:0.28.12@sha256:390051be4ed1847f774fd8980b61d3a3523574c0175d00c3fc7cdf2002a88202"},{"image":"ghcr.io/github/gh-aw-firewall/api-proxy:0.28.12","digest":"sha256:d7d533d87c80d87ff91ac0e21e9299055c3beedff1536262b97ed700fb065a32","pinned_image":"ghcr.io/github/gh-aw-firewall/api-proxy:0.28.12@sha256:d7d533d87c80d87ff91ac0e21e9299055c3beedff1536262b97ed700fb065a32"},{"image":"ghcr.io/github/gh-aw-firewall/squid:0.28.12","digest":"sha256:52c34aca98d2a6833c329f1505912a6949c4fda16618c010c979bd59ea99254f","pinned_image":"ghcr.io/github/gh-aw-firewall/squid:0.28.12@sha256:52c34aca98d2a6833c329f1505912a6949c4fda16618c010c979bd59ea99254f"},{"image":"ghcr.io/github/gh-aw-mcpg:v0.4.15","digest":"sha256:60cd97533e93d8e7be36b979c0f08a70846189bda6190f28bbd6d427bc0d9b6e","pinned_image":"ghcr.io/github/gh-aw-mcpg:v0.4.15@sha256:60cd97533e93d8e7be36b979c0f08a70846189bda6190f28bbd6d427bc0d9b6e"},{"image":"ghcr.io/github/gh-aw-node","digest":"sha256:bac2192f6374d6262116399b34fc5e143d576f82719e90a18261cae7480f4d4e","pinned_image":"ghcr.io/github/gh-aw-node@sha256:bac2192f6374d6262116399b34fc5e143d576f82719e90a18261cae7480f4d4e"},{"image":"ghcr.io/github/github-mcp-server:v1.11.0","digest":"sha256:fbec75de11c255213fa08d80fb166abe73d851fff631c51c0079872967720699","pinned_image":"ghcr.io/github/github-mcp-server:v1.11.0@sha256:fbec75de11c255213fa08d80fb166abe73d851fff631c51c0079872967720699"}],"mcp_servers":[{"name":"github","tools":["get_commit","get_file_contents","get_latest_release","get_me","get_pull_request","get_pull_request_comments","get_pull_request_diff","get_pull_request_files","get_pull_request_review_comments","get_pull_request_reviews","get_pull_request_status","get_release_by_tag","get_tag","issue_read","list_branches","list_commits","list_issue_types","list_issues","list_pull_requests","list_releases","list_starred_repositories","list_tags","pull_request_read","search_code","search_issues","search_pull_requests","search_repositories"]},{"name":"safeoutputs","tools":["add_comment","missing_data","missing_tool","noop","update_issue","workflow_rerun"]}]}
+# gh-aw-metadata: {"schema_version":"v4","frontmatter_hash":"2670852bf8297af8420e813bb7866fe9a2eb19d86999673082177d8fa7c2452a","body_hash":"29b45b7acf73403b2ad9bc59c85077e231aa019f672747090c2cc8ce7193e48b","compiler_version":"v0.88.2","strict":true,"agent_id":"claude","agent_model":"claude-sonnet-4-5-20250929","engine_versions":{"claude":"2.1.247"}}
+# gh-aw-manifest: {"version":1,"secrets":["ANTHROPIC_API_KEY","COPILOT_GITHUB_TOKEN","GH_AW_APP_PRIVATE_KEY","GH_AW_DEFAULT_OTLP_HEADERS","GH_AW_GITHUB_MCP_SERVER_TOKEN","GH_AW_GITHUB_TOKEN","GITHUB_TOKEN"],"actions":[{"repo":"actions/cache/restore","sha":"55cc8345863c7cc4c66a329aec7e433d2d1c52a9","version":"v6.1.0"},{"repo":"actions/cache/save","sha":"55cc8345863c7cc4c66a329aec7e433d2d1c52a9","version":"v6.1.0"},{"repo":"actions/checkout","sha":"3d3c42e5aac5ba805825da76410c181273ba90b1","version":"v7.0.1"},{"repo":"actions/create-github-app-token","sha":"bcd2ba49218906704ab6c1aa796996da409d3eb1","version":"v3.2.0"},{"repo":"actions/download-artifact","sha":"3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c","version":"v8.0.1"},{"repo":"actions/github-script","sha":"3a2844b7e9c422d3c10d287c895573f7108da1b3","version":"v9.0.0"},{"repo":"actions/setup-node","sha":"820762786026740c76f36085b0efc47a31fe5020","version":"v7.0.0"},{"repo":"actions/upload-artifact","sha":"043fb46d1a93c77aae656e7c1c64a875d1fc6a0a","version":"v7.0.1"},{"repo":"github/gh-aw-actions/setup","sha":"9271a1804551c0dc4fb0085a97979950aa2f8489","version":"v0.88.2"}],"containers":[{"image":"ghcr.io/github/gh-aw-firewall/agent:0.28.12","digest":"sha256:390051be4ed1847f774fd8980b61d3a3523574c0175d00c3fc7cdf2002a88202","pinned_image":"ghcr.io/github/gh-aw-firewall/agent:0.28.12@sha256:390051be4ed1847f774fd8980b61d3a3523574c0175d00c3fc7cdf2002a88202"},{"image":"ghcr.io/github/gh-aw-firewall/api-proxy:0.28.12","digest":"sha256:d7d533d87c80d87ff91ac0e21e9299055c3beedff1536262b97ed700fb065a32","pinned_image":"ghcr.io/github/gh-aw-firewall/api-proxy:0.28.12@sha256:d7d533d87c80d87ff91ac0e21e9299055c3beedff1536262b97ed700fb065a32"},{"image":"ghcr.io/github/gh-aw-firewall/squid:0.28.12","digest":"sha256:52c34aca98d2a6833c329f1505912a6949c4fda16618c010c979bd59ea99254f","pinned_image":"ghcr.io/github/gh-aw-firewall/squid:0.28.12@sha256:52c34aca98d2a6833c329f1505912a6949c4fda16618c010c979bd59ea99254f"},{"image":"ghcr.io/github/gh-aw-mcpg:v0.4.15","digest":"sha256:60cd97533e93d8e7be36b979c0f08a70846189bda6190f28bbd6d427bc0d9b6e","pinned_image":"ghcr.io/github/gh-aw-mcpg:v0.4.15@sha256:60cd97533e93d8e7be36b979c0f08a70846189bda6190f28bbd6d427bc0d9b6e"},{"image":"ghcr.io/github/gh-aw-node","digest":"sha256:bac2192f6374d6262116399b34fc5e143d576f82719e90a18261cae7480f4d4e","pinned_image":"ghcr.io/github/gh-aw-node@sha256:bac2192f6374d6262116399b34fc5e143d576f82719e90a18261cae7480f4d4e"},{"image":"ghcr.io/github/github-mcp-server:v1.11.0","digest":"sha256:fbec75de11c255213fa08d80fb166abe73d851fff631c51c0079872967720699","pinned_image":"ghcr.io/github/github-mcp-server:v1.11.0@sha256:fbec75de11c255213fa08d80fb166abe73d851fff631c51c0079872967720699"}],"mcp_servers":[{"name":"github","tools":["actions_get","actions_list","get_commit","get_file_contents","get_job_logs","get_latest_release","get_me","get_pull_request","get_pull_request_comments","get_pull_request_diff","get_pull_request_files","get_pull_request_review_comments","get_pull_request_reviews","get_pull_request_status","get_release_by_tag","get_tag","issue_read","list_branches","list_commits","list_issue_types","list_issues","list_pull_requests","list_releases","list_starred_repositories","list_tags","pull_request_read","search_code","search_issues","search_pull_requests","search_repositories"]},{"name":"safeoutputs","tools":["add_comment","missing_data","missing_tool","noop","queue_reenqueue","update_issue"]}]}
 # This file was automatically generated by gh-aw (v0.88.2). DO NOT EDIT. To debug this workflow, load the skill at https://github.com/github/gh-aw/blob/main/debug.md
 #
 #    ___                   _   _
@@ -23,17 +23,16 @@
 #
 # For more information: https://github.github.com/gh-aw/introduction/overview/
 #
-# Merge queue failure analyzer. When the monitored CI workflow completes with
-# a failure on a merge-queue branch, this agent downloads the failed job's
-# logs, classifies the failure as a flake, a real regression, or unclear
-# (including a real-but-not-this-PR's-fault failure like a fuzzer crash),
-# comments on the affected PR(s), and maintains a running ledger of known
-# flake classes on a tracker issue. Clearly transient infrastructure failures
-# automatically rerun failed jobs, with a cap of three total attempts.
+# Merge queue failure analyzer. When the monitored CI workflow fails on a
+# merge-queue branch, this agent inspects the failed job logs, classifies the
+# failure, comments on the affected PRs, and maintains a ledger of known
+# flakes on a tracker issue. Clearly transient infrastructure failures on
+# approved PRs may be re-enqueued as fresh queue attempts, up to three total
+# queue attempts for an unchanged head.
 #
 # Resolved workflow manifest:
 #   Imports:
-#     - shared/workflow-rerun.md
+#     - shared/queue-reenqueue.md
 #
 # Secrets used:
 #   - ANTHROPIC_API_KEY
@@ -68,7 +67,14 @@
 name: "Merge Queue Failure Analyzer"
 on:
   # bots: # Bots processed as bot check in pre-activation job
-  # - cgwaltersbot[bot] # Bots processed as bot check in pre-activation job
+  # - ${{ vars.GH_AW_APP_BOT_SLUG }} # Bots processed as bot check in pre-activation job
+  # roles: # Roles processed as role check in pre-activation job
+  # - admin # Roles processed as role check in pre-activation job
+  # - maintainer # Roles processed as role check in pre-activation job
+  # - maintain # Roles processed as role check in pre-activation job
+  # - write # Roles processed as role check in pre-activation job
+  # - triage # Roles processed as role check in pre-activation job
+  # - read # Roles processed as role check in pre-activation job
   workflow_run:
     # zizmor: ignore[dangerous-triggers] - workflow_run trigger is secured with role and fork validation
     branches:
@@ -95,7 +101,9 @@ env:
 
 jobs:
   activation:
-    needs: pre_activation
+    needs:
+      - approval_gate
+      - pre_activation
     # zizmor: ignore[dangerous-triggers] - workflow_run trigger is secured with role and fork validation
     if: >
       (needs.pre_activation.outputs.activated == 'true' && (github.event.workflow_run.conclusion == 'failure' &&
@@ -285,21 +293,23 @@ jobs:
           GH_AW_ACTIONS_DIR: ${{ runner.temp }}/gh-aw/actions
           GH_AW_PROMPT: ${{ runner.temp }}/gh-aw/aw-prompts/prompt.txt
           GH_AW_SAFE_OUTPUTS: ${{ runner.temp }}/gh-aw/safeoutputs/outputs.jsonl
-          GH_AW_PROMPT_CONFIG: "{\"items\":[{\"content_env\":\"GH_AW_PROMPT_CONTENT_0000\"},{\"file\":\"xpia.md\"},{\"file\":\"temp_folder_prompt.md\"},{\"file\":\"markdown.md\"},{\"file\":\"safe_outputs_prompt.md\"},{\"content_env\":\"GH_AW_PROMPT_CONTENT_0001\"},{\"content_env\":\"GH_AW_PROMPT_CONTENT_0002\"},{\"file\":\"mcp_cli_tools_with_safeoutputs_prompt.md\"},{\"content_env\":\"GH_AW_PROMPT_CONTENT_0003\"},{\"file\":\"github_mcp_tools_with_safeoutputs_prompt.md\"},{\"content_env\":\"GH_AW_PROMPT_CONTENT_0004\"},{\"content_env\":\"GH_AW_PROMPT_CONTENT_0005\"}]}"
+          GH_AW_PROMPT_CONFIG: "{\"items\":[{\"content_env\":\"GH_AW_PROMPT_CONTENT_0000\"},{\"file\":\"xpia.md\"},{\"file\":\"temp_folder_prompt.md\"},{\"file\":\"markdown.md\"},{\"file\":\"safe_outputs_prompt.md\"},{\"content_env\":\"GH_AW_PROMPT_CONTENT_0001\"},{\"content_env\":\"GH_AW_PROMPT_CONTENT_0002\"},{\"file\":\"mcp_cli_tools_with_safeoutputs_prompt.md\"},{\"content_env\":\"GH_AW_PROMPT_CONTENT_0003\"},{\"file\":\"github_mcp_tools_with_safeoutputs_prompt.md\"},{\"content_env\":\"GH_AW_PROMPT_CONTENT_0004\"},{\"content_env\":\"GH_AW_PROMPT_CONTENT_0005\"},{\"content_env\":\"GH_AW_PROMPT_CONTENT_0006\"}]}"
           GH_AW_EXPR_1A3A194A: ${{ github.event.discussion.number || (fromJSON(github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}').item_type == 'discussion' && fromJSON(github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}').item_number) }}
           GH_AW_EXPR_463A214A: ${{ github.event.pull_request.number || (fromJSON(github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}').item_type == 'pull_request' && fromJSON(github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}').item_number) }}
           GH_AW_EXPR_802A9F6A: ${{ github.event.issue.number || (fromJSON(github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}').item_type == 'issue' && fromJSON(github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}').item_number) }}
           GH_AW_EXPR_FF1D34CE: ${{ github.event.comment.id || fromJSON(github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}').comment_id }}
           GH_AW_GITHUB_ACTOR: ${{ github.actor }}
+          GH_AW_GITHUB_EVENT_WORKFLOW_RUN_ID: ${{ github.event.workflow_run.id }}
           GH_AW_GITHUB_REPOSITORY: ${{ github.repository }}
           GH_AW_GITHUB_RUN_ID: ${{ github.run_id }}
           GH_AW_GITHUB_WORKSPACE: ${{ github.workspace }}
           GH_AW_PROMPT_CONTENT_0000: "<system>\n"
-          GH_AW_PROMPT_CONTENT_0001: "<safe-output-tools>\nTools: add_comment(max:4), update_issue, missing_tool, missing_data, noop, workflow_rerun\n"
+          GH_AW_PROMPT_CONTENT_0001: "<safe-output-tools>\nTools: add_comment(max:4), update_issue, missing_tool, missing_data, noop, queue_reenqueue\n"
           GH_AW_PROMPT_CONTENT_0002: "</safe-output-tools>\n"
           GH_AW_PROMPT_CONTENT_0003: "<github-context>\nThe following GitHub context information is available for this workflow:\n{{#if github.actor}}\n- **actor**: __GH_AW_GITHUB_ACTOR__\n{{/if}}\n{{#if github.repository}}\n- **repository**: __GH_AW_GITHUB_REPOSITORY__\n{{/if}}\n{{#if github.workspace}}\n- **workspace**: __GH_AW_GITHUB_WORKSPACE__\n{{/if}}\n{{#if github.event.issue.number || (github.aw.context.item_type == 'issue' && github.aw.context.item_number)}}\n- **issue-number**: #__GH_AW_EXPR_802A9F6A__\n{{/if}}\n{{#if github.event.discussion.number || (github.aw.context.item_type == 'discussion' && github.aw.context.item_number)}}\n- **discussion-number**: #__GH_AW_EXPR_1A3A194A__\n{{/if}}\n{{#if github.event.pull_request.number || (github.aw.context.item_type == 'pull_request' && github.aw.context.item_number)}}\n- **pull-request-number**: #__GH_AW_EXPR_463A214A__\n{{/if}}\n{{#if github.event.comment.id || github.aw.context.comment_id}}\n- **comment-id**: __GH_AW_EXPR_FF1D34CE__\n{{/if}}\n{{#if github.run_id}}\n- **workflow-run-id**: __GH_AW_GITHUB_RUN_ID__\n{{/if}}\n</github-context>\n\n"
           GH_AW_PROMPT_CONTENT_0004: "</system>\n"
-          GH_AW_PROMPT_CONTENT_0005: "{{#runtime-import .github/workflows/queue-triage.md}}\n"
+          GH_AW_PROMPT_CONTENT_0005: "{{#runtime-import .github/workflows/shared/triage-classification.md}}\n"
+          GH_AW_PROMPT_CONTENT_0006: "{{#runtime-import .github/workflows/queue-triage.md}}\n"
         with:
           script: |
             const { setupGlobals } = require(process.env.GH_AW_ACTIONS_DIR + '/setup_globals.cjs');
@@ -311,6 +321,7 @@ jobs:
         env:
           GH_AW_PROMPT: ${{ runner.temp }}/gh-aw/aw-prompts/prompt.txt
           GH_AW_ENGINE_ID: "claude"
+          GH_AW_GITHUB_EVENT_WORKFLOW_RUN_ID: ${{ github.event.workflow_run.id }}
         with:
           script: |
             const path = require('path');
@@ -328,10 +339,17 @@ jobs:
           GH_AW_EXPR_802A9F6A: ${{ github.event.issue.number || (fromJSON(github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}').item_type == 'issue' && fromJSON(github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}').item_number) }}
           GH_AW_EXPR_FF1D34CE: ${{ github.event.comment.id || fromJSON(github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}').comment_id }}
           GH_AW_GITHUB_ACTOR: ${{ github.actor }}
+          GH_AW_GITHUB_EVENT_WORKFLOW_RUN_ID: ${{ github.event.workflow_run.id }}
           GH_AW_GITHUB_REPOSITORY: ${{ github.repository }}
           GH_AW_GITHUB_RUN_ID: ${{ github.run_id }}
           GH_AW_GITHUB_WORKSPACE: ${{ github.workspace }}
           GH_AW_MCP_CLI_SERVERS_LIST: '- `safeoutputs` — run `safeoutputs --help` to see available tools'
+          GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_APPROVED: ${{ needs.approval_gate.outputs.approved }}
+          GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_REASON: ${{ needs.approval_gate.outputs.reason }}
+          GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_TARGET_BASE: ${{ needs.approval_gate.outputs.target_base }}
+          GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_TARGET_HEAD_OID: ${{ needs.approval_gate.outputs.target_head_oid }}
+          GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_TARGET_PR: ${{ needs.approval_gate.outputs.target_pr }}
+          GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_TARGET_PR_ID: ${{ needs.approval_gate.outputs.target_pr_id }}
           GH_AW_NEEDS_PRE_ACTIVATION_OUTPUTS_ACTIVATED: ${{ needs.pre_activation.outputs.activated }}
         with:
           script: |
@@ -351,10 +369,17 @@ jobs:
                 GH_AW_EXPR_802A9F6A: process.env.GH_AW_EXPR_802A9F6A,
                 GH_AW_EXPR_FF1D34CE: process.env.GH_AW_EXPR_FF1D34CE,
                 GH_AW_GITHUB_ACTOR: process.env.GH_AW_GITHUB_ACTOR,
+                GH_AW_GITHUB_EVENT_WORKFLOW_RUN_ID: process.env.GH_AW_GITHUB_EVENT_WORKFLOW_RUN_ID,
                 GH_AW_GITHUB_REPOSITORY: process.env.GH_AW_GITHUB_REPOSITORY,
                 GH_AW_GITHUB_RUN_ID: process.env.GH_AW_GITHUB_RUN_ID,
                 GH_AW_GITHUB_WORKSPACE: process.env.GH_AW_GITHUB_WORKSPACE,
                 GH_AW_MCP_CLI_SERVERS_LIST: process.env.GH_AW_MCP_CLI_SERVERS_LIST,
+                GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_APPROVED: process.env.GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_APPROVED,
+                GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_REASON: process.env.GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_REASON,
+                GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_TARGET_BASE: process.env.GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_TARGET_BASE,
+                GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_TARGET_HEAD_OID: process.env.GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_TARGET_HEAD_OID,
+                GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_TARGET_PR: process.env.GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_TARGET_PR,
+                GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_TARGET_PR_ID: process.env.GH_AW_NEEDS_APPROVAL_GATE_OUTPUTS_TARGET_PR_ID,
                 GH_AW_NEEDS_PRE_ACTIVATION_OUTPUTS_ACTIVATED: process.env.GH_AW_NEEDS_PRE_ACTIVATION_OUTPUTS_ACTIVATED
               }
             });
@@ -392,8 +417,10 @@ jobs:
           retention-days: 1
 
   agent:
-    needs: activation
-    if: needs.activation.outputs.daily_ai_credits_exceeded != 'true'
+    needs:
+      - activation
+      - approval_gate
+    if: (needs.activation.outputs.daily_ai_credits_exceeded != 'true') && (needs.approval_gate.outputs.approved == 'true')
     runs-on: ubuntu-latest
     permissions:
       actions: read
@@ -484,214 +511,11 @@ jobs:
         run: bash "${RUNNER_TEMP}/gh-aw/actions/configure_gh_for_ghe.sh"
         env:
           GH_TOKEN: ${{ github.token }}
-      - name: Start DIFC Proxy
-        env:
-          GH_TOKEN: ${{ secrets.GH_AW_GITHUB_MCP_SERVER_TOKEN || secrets.GH_AW_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
-          GITHUB_SERVER_URL: ${{ github.server_url }}
-          GITHUB_API_URL: ${{ github.api_url }}
-          GH_HOST: ${{ env.GH_HOST }}
-          GITHUB_HOST: ${{ env.GITHUB_HOST }}
-          GITHUB_ENTERPRISE_HOST: ${{ env.GITHUB_ENTERPRISE_HOST }}
-          GITHUB_GRAPHQL_URL: ${{ env.GITHUB_GRAPHQL_URL }}
-          GITHUB_COPILOT_BASE_URL: ${{ env.GITHUB_COPILOT_BASE_URL }}
-          GH_AW_NETWORK_ISOLATION: 'true'
-          DIFC_PROXY_POLICY: '{"allow-only":{"min-integrity":"approved","repos":"all"}}'
-          DIFC_PROXY_IMAGE: 'ghcr.io/github/gh-aw-mcpg:v0.4.15'
-        run: |
-          bash "${RUNNER_TEMP}/gh-aw/actions/start_difc_proxy.sh"
       - name: Download activation artifact
         uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
           name: activation
           path: /tmp/gh-aw
-      - name: Pre-fetch merge-queue CI failure data
-        run: |-
-          set -euo pipefail
-
-          BASE_DIR="/tmp/gh-aw/agent/queue-triage"
-          LOG_DIR="$BASE_DIR/logs"
-          HINTS_DIR="$BASE_DIR/hints"
-          mkdir -p "$LOG_DIR" "$HINTS_DIR"
-
-          RUN_ID="$EVENT_RUN_ID"
-
-          echo "=== Queue Triage: pre-fetching data for run $RUN_ID ==="
-
-          # 1. Resolve the run itself.
-          gh api "repos/$REPO/actions/runs/$RUN_ID" \
-            --jq '{id, run_attempt, event, conclusion, head_branch, head_sha, html_url, name, run_number}' \
-            > "$BASE_DIR/run.json"
-
-          HEAD_BRANCH=$(jq -r '.head_branch' "$BASE_DIR/run.json")
-          RUN_HTML_URL=$(jq -r '.html_url' "$BASE_DIR/run.json")
-
-          # 2. Failed/cancelled jobs and their failed step names.
-          gh api --paginate "repos/$REPO/actions/runs/$RUN_ID/jobs" \
-            --jq '[.jobs[] | select(.conclusion == "failure" or .conclusion == "cancelled") |
-                   {id, name, conclusion, html_url,
-                    failed_steps: [.steps[]? | select(.conclusion == "failure") | .name]}]' \
-            > "$BASE_DIR/failed-jobs.json"
-
-          FAILED_COUNT=$(jq 'length' "$BASE_DIR/failed-jobs.json")
-          echo "Found $FAILED_COUNT failed/cancelled job(s) in run $RUN_ID"
-
-          # 3. Download each failed job's log, keyed on the numeric job id (never
-          # the untrusted job name), and cap what the agent sees to grepped
-          # error-indicator lines plus a tail, so a job that died without
-          # printing an error line is still diagnosable.
-          ERROR_PATTERN='error[: ]|ERROR|FAIL|panic:|fatal[: ]|assertion|Cannot download|502|503|timed out|No space left|Killed|OOM|rate limit'
-
-          if [ "$FAILED_COUNT" -gt 0 ]; then
-            jq -r '.[].id' "$BASE_DIR/failed-jobs.json" | while read -r JOB_ID; do
-              LOG_FILE="$LOG_DIR/job-${JOB_ID}.log"
-              echo "Downloading log for job $JOB_ID..."
-              # --allow-escape-sequences: raw job logs almost always contain
-              # ANSI color codes, and gh refuses to print a response
-              # containing terminal escape sequences without this flag --
-              # without it every download here fails and this falls through
-              # to the "(log download failed or log expired)" placeholder
-              # below, confirmed live.
-              if gh api --allow-escape-sequences "repos/$REPO/actions/jobs/$JOB_ID/logs" > "$LOG_FILE" 2>/dev/null; then
-                # cut -c bounds each line's *length* before head/tail bound the
-                # line *count* -- the log content is untrusted PR-controlled
-                # text, and a single minified JSON or base64 blob on one line
-                # could otherwise dump megabytes into the agent's context.
-                grep -inE "$ERROR_PATTERN" "$LOG_FILE" 2>/dev/null | cut -c 1-1000 | head -40 \
-                  > "$HINTS_DIR/job-${JOB_ID}.txt" || true
-                tail -100 "$LOG_FILE" | cut -c 1-1000 > "$HINTS_DIR/job-${JOB_ID}-tail.txt" || true
-              else
-                echo "(log download failed or log expired)" | tee "$LOG_FILE" \
-                  "$HINTS_DIR/job-${JOB_ID}.txt" "$HINTS_DIR/job-${JOB_ID}-tail.txt" > /dev/null
-              fi
-            done
-          fi
-
-          # 4. Resolve the affected PR(s) from head_branch, e.g.
-          # gh-readonly-queue/main/pr-2342-<sha> (a batched merge group can name
-          # more than one pr-<n>). The base branch is the path segment between
-          # gh-readonly-queue/ and the final /pr-<n>-<sha> segment. Non-greedy
-          # `%` (not `%%`) matters here: a base branch that itself contains
-          # /pr- (e.g. gh-readonly-queue/release/pr-1.0/pr-42-<sha> for a base
-          # named release/pr-1.0) would otherwise get truncated at the first
-          # /pr-, not the last.
-          QUEUE_BASE=""
-          if [[ "$HEAD_BRANCH" == gh-readonly-queue/*/pr-* ]]; then
-            QUEUE_BASE="${HEAD_BRANCH#gh-readonly-queue/}"
-            QUEUE_BASE="${QUEUE_BASE%/pr-*}"
-          fi
-
-          echo "[]" > "$BASE_DIR/prs.json"
-          if [ -n "$QUEUE_BASE" ]; then
-            CANDIDATES=$( (grep -oE 'pr-[0-9]+' <<<"$HEAD_BRANCH" | grep -oE '[0-9]+' | sort -un) || true)
-            VERIFIED="[]"
-            for N in $CANDIDATES; do
-              PR_JSON=$(gh api "repos/$REPO/pulls/$N" 2>/dev/null || echo '')
-              if [ -z "$PR_JSON" ]; then
-                echo "  PR #$N: not found via API, dropping (unverified candidates are never commented on)"
-                continue
-              fi
-              STATE=$(jq -r '.state' <<<"$PR_JSON")
-              BASE_REF=$(jq -r '.base.ref' <<<"$PR_JSON")
-              if [ "$STATE" != "open" ] || [ "$BASE_REF" != "$QUEUE_BASE" ]; then
-                echo "  PR #$N: state=$STATE base=$BASE_REF (need open + base=$QUEUE_BASE), dropping"
-                continue
-              fi
-              # Capture first, then match, rather than piping straight into
-              # `grep -qx`: grep -q exits as soon as it sees a match, and if gh
-              # still has more timeline JSON to write at that point it gets
-              # SIGPIPE'd. Under `set -o pipefail` that turns into the
-              # pipeline's exit status, so the `if` below would silently take
-              # the false branch even though the event was genuinely present --
-              # a flaky false negative on DEQUEUED that gets more likely the
-              # longer the PR's timeline is.
-              DEQUEUED=false
-              TIMELINE_EVENTS=$(gh api --paginate "repos/$REPO/issues/$N/timeline" --jq '.[].event' 2>/dev/null || true)
-              if grep -qx 'removed_from_merge_queue' <<<"$TIMELINE_EVENTS"; then
-                DEQUEUED=true
-              fi
-              ENTRY=$(jq -n --argjson n "$N" --arg base "$BASE_REF" --argjson dequeued "$DEQUEUED" \
-                '{number: $n, base_ref: $base, dequeued: $dequeued}')
-              VERIFIED=$(jq --argjson e "$ENTRY" '. + [$e]' <<<"$VERIFIED")
-              echo "  PR #$N: verified (base=$BASE_REF, dequeued=$DEQUEUED)"
-            done
-            echo "$VERIFIED" > "$BASE_DIR/prs.json"
-          fi
-
-          # 5. Resolve the flake tracker deterministically, rather than leaving
-          # this to an agent search: the "issues" list endpoint used here also
-          # returns pull requests carrying the label, so those are filtered out
-          # by the presence of a `.pull_request` key. Deliberately captures only
-          # the number and title, never the body — the body is where the stale
-          # ledger lives, and the whole point of resolving the tracker here
-          # instead of via the agent's own search-then-read is to keep that
-          # ledger out of the agent's context until after it has independently
-          # reached a flake/real/unclear verdict (see queue-triage.md's "Locate
-          # the flake tracker" step, and README.md's note on why this replaced
-          # search-based resolution).
-          TRACKER_MATCHES=$(gh api --paginate "repos/$REPO/issues?labels=agent/flake-tracker&state=open" \
-            --jq '[.[] | select(has("pull_request") | not)]')
-          TRACKER_COUNT=$(jq 'length' <<<"$TRACKER_MATCHES")
-          if [ "$TRACKER_COUNT" -eq 1 ]; then
-            jq '{count: 1, number: .[0].number, title: .[0].title}' <<<"$TRACKER_MATCHES" \
-              > "$BASE_DIR/tracker.json"
-          else
-            jq --argjson c "$TRACKER_COUNT" '{count: $c}' <<<"$TRACKER_MATCHES" > "$BASE_DIR/tracker.json"
-          fi
-
-          # 6. Human-readable summary — the agent is told to read this first.
-          {
-            echo "=== Queue Triage Pre-Analysis ==="
-            echo "Run: $(jq -r '.id' "$BASE_DIR/run.json") ($RUN_HTML_URL), attempt $(jq -r '.run_attempt' "$BASE_DIR/run.json")"
-            echo "Workflow: $(jq -r '.name' "$BASE_DIR/run.json") run #$(jq -r '.run_number' "$BASE_DIR/run.json")"
-            echo "Event: $(jq -r '.event' "$BASE_DIR/run.json")  Conclusion: $(jq -r '.conclusion' "$BASE_DIR/run.json")"
-            echo "Head branch: $HEAD_BRANCH"
-            echo "Head SHA: $(jq -r '.head_sha' "$BASE_DIR/run.json")"
-            echo "Queue base branch: ${QUEUE_BASE:-<none: head_branch did not match gh-readonly-queue/<base>/pr-N>}"
-            echo ""
-            echo "Failed/cancelled jobs ($BASE_DIR/failed-jobs.json): $FAILED_COUNT"
-            if [ "$FAILED_COUNT" -gt 0 ]; then
-              jq -r '.[] | "  Job \(.id) [\(.conclusion)]: \(.name)\n    URL: \(.html_url)\n    Failed steps: \(.failed_steps | join(", "))"' \
-                "$BASE_DIR/failed-jobs.json"
-            else
-              echo "  (none — nothing to analyze; call the noop safe-output and stop)"
-            fi
-            echo ""
-            echo "Downloaded logs and hints:"
-            for LOG_FILE in "$LOG_DIR"/job-*.log; do
-              [ -f "$LOG_FILE" ] || continue
-              JOB_ID=$(basename "$LOG_FILE" .log); JOB_ID=${JOB_ID#job-}
-              echo "  $LOG_FILE ($(wc -l < "$LOG_FILE") lines)"
-              echo "    hints: $HINTS_DIR/job-${JOB_ID}.txt ($(wc -l < "$HINTS_DIR/job-${JOB_ID}.txt" 2>/dev/null || echo 0) matches)"
-              echo "    tail:  $HINTS_DIR/job-${JOB_ID}-tail.txt"
-            done
-            echo ""
-            echo "Verified PR(s) ($BASE_DIR/prs.json):"
-            PR_COUNT=$(jq 'length' "$BASE_DIR/prs.json")
-            if [ "$PR_COUNT" -gt 0 ]; then
-              jq -r '.[] | "  PR #\(.number) (base: \(.base_ref), dequeued: \(.dequeued))"' "$BASE_DIR/prs.json"
-            else
-              echo "  (none verified — do not comment on any PR; a tracker-only update may still be possible)"
-            fi
-            echo ""
-            echo "Flake tracker ($BASE_DIR/tracker.json): $TRACKER_COUNT open issue(s) labeled agent/flake-tracker"
-            case "$TRACKER_COUNT" in
-              1) echo "  Issue #$(jq -r '.number' "$BASE_DIR/tracker.json"): $(jq -r '.title' "$BASE_DIR/tracker.json")" ;;
-              0) echo "  (none — call missing-data explaining the setup problem, but still post the PR comment(s); never create the tracker yourself)" ;;
-              *) echo "  (more than one — call missing-data explaining the setup problem, but still post the PR comment(s); never create the tracker yourself)" ;;
-            esac
-          } | tee "$BASE_DIR/summary.txt"
-
-          echo ""
-          echo "Pre-analysis complete. Agent should start with $BASE_DIR/summary.txt"
-        env:
-          EVENT_RUN_ID: ${{ github.event.workflow_run.id }}
-          GH_HOST: ${{ env.GH_HOST || 'github.com' }}
-          GH_REPO: ${{ github.repository }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_API_URL: https://localhost:18443/api/v3
-          GITHUB_GRAPHQL_URL: https://localhost:18443/api/graphql
-          NODE_EXTRA_CA_CERTS: /tmp/gh-aw/proxy-logs/proxy-tls/ca.crt
-          REPO: ${{ github.repository }}
       - name: Configure Git credentials
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
@@ -740,14 +564,10 @@ jobs:
         id: parse-guard-vars
         env:
           GH_AW_BLOCKED_USERS_VAR: ${{ vars.GH_AW_GITHUB_BLOCKED_USERS || '' }}
-          GH_AW_TRUSTED_USERS_EXTRA: cgwaltersbot[bot]
+          GH_AW_TRUSTED_USERS_EXTRA: ${{ vars.GH_AW_APP_BOT_SLUG }}
           GH_AW_TRUSTED_USERS_VAR: ${{ vars.GH_AW_GITHUB_TRUSTED_USERS || '' }}
           GH_AW_APPROVAL_LABELS_VAR: ${{ vars.GH_AW_GITHUB_APPROVAL_LABELS || '' }}
         run: bash "${RUNNER_TEMP}/gh-aw/actions/parse_guard_list.sh"
-      - name: Stop DIFC Proxy
-        if: always()
-        continue-on-error: true
-        run: bash "${RUNNER_TEMP}/gh-aw/actions/stop_difc_proxy.sh"
       - name: Restore agent config folders from base branch
         if: steps.checkout-pr.outcome == 'success'
         env:
@@ -775,7 +595,7 @@ jobs:
         env:
           GH_AW_FILE_ROOT: "${{ runner.temp }}/gh-aw"
           GH_AW_FILE_CONFIG: "{\"files\":[{\"path\":\"safeoutputs/config.json\",\"content_env\":\"GH_AW_SAFE_OUTPUTS_CONFIG\"}]}"
-          GH_AW_SAFE_OUTPUTS_CONFIG: "{\"add_comment\":{\"max\":4,\"target\":\"*\"},\"create_report_incomplete_issue\":{},\"missing_data\":{},\"missing_tool\":{},\"noop\":{\"max\":1,\"report-as-issue\":\"true\"},\"report_incomplete\":{},\"update_issue\":{\"allow_body\":true,\"max\":1,\"required_labels\":[\"agent/flake-tracker\"],\"target\":\"*\"},\"workflow-rerun\":{\"description\":\"Automatically rerun the monitored failed CI workflow after a clearly transient infrastructure failure. Choose failed to rerun only failed jobs, or all to rerun every job. The target run is derived from this workflow's trigger and cannot be selected by the agent.\",\"inputs\":{\"reason\":{\"default\":null,\"description\":\"Brief evidence that the failure is a transient infrastructure problem.\",\"required\":true,\"type\":\"string\"},\"scope\":{\"default\":\"failed\",\"description\":\"Rerun only failed jobs or every job in the failed workflow run.\",\"options\":[\"failed\",\"all\"],\"required\":true,\"type\":\"choice\"}},\"max\":1,\"output\":\"Rerun request validated and submitted.\"}}"
+          GH_AW_SAFE_OUTPUTS_CONFIG: "{\"add_comment\":{\"max\":4,\"target\":\"*\"},\"create_report_incomplete_issue\":{},\"missing_data\":{},\"missing_tool\":{},\"noop\":{\"max\":1,\"report-as-issue\":\"true\"},\"queue-reenqueue\":{\"description\":\"Re-enqueue the approved PR named by the failed merge-queue branch as a fresh queue attempt.\",\"inputs\":{\"reason\":{\"default\":null,\"description\":\"Brief evidence of a clearly transient infrastructure failure.\",\"required\":true,\"type\":\"string\"}},\"max\":1,\"output\":\"Fresh merge-queue attempt validated and requested.\"},\"report_incomplete\":{},\"update_issue\":{\"allow_body\":true,\"max\":1,\"required_labels\":[\"agent/flake-tracker\"],\"target\":\"*\"}}"
         with:
           script: |
             const path = require('path');
@@ -795,31 +615,21 @@ jobs:
               "repo_params": {},
               "dynamic_tools": [
                 {
-                  "description": "Automatically rerun the monitored failed CI workflow after a clearly transient infrastructure failure. Choose failed to rerun only failed jobs, or all to rerun every job. The target run is derived from this workflow's trigger and cannot be selected by the agent.",
+                  "description": "Re-enqueue the approved PR named by the failed merge-queue branch as a fresh queue attempt.",
                   "inputSchema": {
                     "additionalProperties": false,
                     "properties": {
                       "reason": {
-                        "description": "Brief evidence that the failure is a transient infrastructure problem.",
-                        "type": "string"
-                      },
-                      "scope": {
-                        "default": "failed",
-                        "description": "Rerun only failed jobs or every job in the failed workflow run.",
-                        "enum": [
-                          "failed",
-                          "all"
-                        ],
+                        "description": "Brief evidence of a clearly transient infrastructure failure.",
                         "type": "string"
                       }
                     },
                     "required": [
-                      "reason",
-                      "scope"
+                      "reason"
                     ],
                     "type": "object"
                   },
-                  "name": "workflow_rerun"
+                  "name": "queue_reenqueue"
                 }
               ]
             }
@@ -1045,7 +855,7 @@ jobs:
           export MCP_GATEWAY_DOCKER_COMMAND='docker run -i --rm --network bridge -p 127.0.0.1:'"${MCP_GATEWAY_PORT}"':'"${MCP_GATEWAY_PORT}"' --name awmg-mcpg --add-host host.docker.internal:host-gateway --user '"${MCP_GATEWAY_UID}"':'"${MCP_GATEWAY_GID}"' --group-add '"${DOCKER_SOCK_GID}"' -v '"${DOCKER_SOCK_PATH}"':/var/run/docker.sock -e MCP_GATEWAY_PORT -e MCP_GATEWAY_DOMAIN -e MCP_GATEWAY_AGENT_ID -e MCP_GATEWAY_PAYLOAD_DIR -e MCP_GATEWAY_PAYLOAD_SIZE_THRESHOLD -e DOCKER_HOST=unix:///var/run/docker.sock -e DEBUG -e MCP_GATEWAY_LOG_DIR -e GH_AW_MCP_LOG_DIR -e GH_AW_SAFE_OUTPUTS -e GH_AW_SAFE_OUTPUTS_CONFIG_PATH -e GH_AW_SAFE_OUTPUTS_TOOLS_PATH -e GH_AW_PR_HEAD_BASE_BRANCH -e GH_AW_PR_HEAD_BASE_SHA -e GH_AW_PR_HEAD_BASE_REPO -e GH_AW_PR_HEAD_BASE_PR_NUMBER -e GH_AW_PR_HEAD_BASE_REF -e GH_AW_PR_HEAD_REPO -e GH_AW_POLICY_ALLOW_CREATE_PULL_REQUEST -e GH_AW_ASSETS_BRANCH -e GH_AW_ASSETS_MAX_SIZE_KB -e GH_AW_ASSETS_ALLOWED_EXTS -e DEFAULT_BRANCH -e GITHUB_MCP_SERVER_TOKEN -e GITHUB_MCP_GUARD_MIN_INTEGRITY -e GITHUB_MCP_GUARD_REPOS -e GH_AW_SINK_VISIBILITY -e GITHUB_REPOSITORY -e GITHUB_SERVER_URL -e GITHUB_SHA -e GITHUB_WORKSPACE -e GITHUB_TOKEN -e GITHUB_RUN_ID -e GITHUB_RUN_NUMBER -e GITHUB_RUN_ATTEMPT -e GITHUB_JOB -e GITHUB_ACTION -e GITHUB_EVENT_NAME -e GITHUB_EVENT_PATH -e GITHUB_ACTOR -e GITHUB_ACTOR_ID -e GITHUB_TRIGGERING_ACTOR -e GITHUB_WORKFLOW -e GITHUB_WORKFLOW_REF -e GITHUB_WORKFLOW_SHA -e GITHUB_REF -e GITHUB_REF_NAME -e GITHUB_REF_TYPE -e GITHUB_HEAD_REF -e GITHUB_BASE_REF -e RUNNER_TEMP -e RUNNER_TOOL_CACHE -e MCP_GATEWAY_ALLOWED_MOUNT_ROOTS -e GITHUB_AW_OTEL_TRACE_ID -e GITHUB_AW_OTEL_PARENT_SPAN_ID -e OTEL_EXPORTER_OTLP_HEADERS -v /tmp/gh-aw/mcp-payloads:/tmp/gh-aw/mcp-payloads:rw -v /opt:/opt:ro -v /tmp:/tmp:rw -v '"${GITHUB_WORKSPACE}"':'"${GITHUB_WORKSPACE}"':rw -v '"${RUNNER_TEMP}"'/gh-aw/safeoutputs:'"${RUNNER_TEMP}"'/gh-aw/safeoutputs:rw ghcr.io/github/gh-aw-mcpg:v0.4.15'
 
           GH_AW_NODE=$(which node 2>/dev/null || command -v node 2>/dev/null || echo node)
-          cat << GH_AW_MCP_CONFIG_b198db69d16256c8_EOF | "$GH_AW_NODE" "${RUNNER_TEMP}/gh-aw/actions/start_mcp_gateway.cjs"
+          cat << GH_AW_MCP_CONFIG_453c90929b15eae7_EOF | "$GH_AW_NODE" "${RUNNER_TEMP}/gh-aw/actions/start_mcp_gateway.cjs"
           {
             "mcpServers": {
               "github": {
@@ -1055,7 +865,7 @@ jobs:
                   "GITHUB_HOST": "$GITHUB_SERVER_URL",
                   "GITHUB_PERSONAL_ACCESS_TOKEN": "$GITHUB_MCP_SERVER_TOKEN",
                   "GITHUB_READ_ONLY": "1",
-                  "GITHUB_TOOLSETS": "context,repos,issues,pull_requests"
+                  "GITHUB_TOOLSETS": "context,repos,issues,pull_requests,actions"
                 },
                 "guard-policies": {
                   "allow-only": {
@@ -1121,7 +931,7 @@ jobs:
               }
             }
           }
-          GH_AW_MCP_CONFIG_b198db69d16256c8_EOF
+          GH_AW_MCP_CONFIG_453c90929b15eae7_EOF
       - name: Mount MCP servers as CLIs
         id: mount-mcp-clis
         continue-on-error: true
@@ -1467,13 +1277,59 @@ jobs:
             /tmp/gh-aw/sandbox/firewall/awf-reflect.json
           if-no-files-found: ignore
 
+  approval_gate:
+    needs: pre_activation
+    if: needs.pre_activation.outputs.activated == 'true'
+    runs-on: ubuntu-slim
+    permissions:
+      actions: read
+      contents: read
+      pull-requests: read
+    timeout-minutes: 5
+    outputs:
+      approved: ${{ steps.gate.outputs.approved }}
+      reason: ${{ steps.gate.outputs.reason }}
+      target_base: ${{ steps.gate.outputs.target_base }}
+      target_head_oid: ${{ steps.gate.outputs.target_head_oid }}
+      target_pr: ${{ steps.gate.outputs.target_pr }}
+      target_pr_id: ${{ steps.gate.outputs.target_pr_id }}
+    steps:
+      - name: Configure GH_HOST for enterprise compatibility
+        id: ghes-host-config
+        shell: bash
+        run: | # zizmor: ignore[github-env] - GITHUB_SERVER_URL is set by GitHub Actions, not user input.
+          # Derive GH_HOST from GITHUB_SERVER_URL so the gh CLI targets the correct
+          # GitHub instance (GHES/GHEC). On github.com this is a harmless no-op.
+          GH_HOST="${GITHUB_SERVER_URL#https://}"
+          GH_HOST="${GH_HOST#http://}"
+          echo "GH_HOST=${GH_HOST}" >> "$GITHUB_ENV"
+      - name: Checkout trusted approval gate
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1 (source v7)
+        with:
+          persist-credentials: false
+          ref: ${{ github.event.repository.default_branch }}
+          sparse-checkout: .github/workflows/shared
+          token: ${{ github.token }}
+      - name: Verify pull request approval
+        id: gate
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0 (source v9)
+        with:
+          github-token: ${{ github.token }}
+          script: |
+            const approvalGate = require(`${process.env.GITHUB_WORKSPACE}/.github/workflows/shared/approval-gate.cjs`);
+            await approvalGate({
+              core, context, expectedEvent: 'merge_group', github,
+              monitoredWorkflow: 'CI', monitoredWorkflowPath: '.github/workflows/ci.yml',
+            });
+
   conclusion:
     needs:
       - activation
       - agent
+      - approval_gate
       - detection
+      - queue_reenqueue
       - safe_outputs
-      - workflow_rerun
     if: >
       always() && (needs.agent.result != 'skipped' || needs.activation.outputs.lockdown_check_failed == 'true' ||
       needs.activation.outputs.oauth_token_check_failed == 'true' || needs.activation.outputs.stale_lock_file_failed == 'true' ||
@@ -1863,7 +1719,7 @@ jobs:
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         env:
           WORKFLOW_NAME: "Merge Queue Failure Analyzer"
-          WORKFLOW_DESCRIPTION: "Merge queue failure analyzer. When the monitored CI workflow completes with\na failure on a merge-queue branch, this agent downloads the failed job's\nlogs, classifies the failure as a flake, a real regression, or unclear\n(including a real-but-not-this-PR's-fault failure like a fuzzer crash),\ncomments on the affected PR(s), and maintains a running ledger of known\nflake classes on a tracker issue. Clearly transient infrastructure failures\nautomatically rerun failed jobs, with a cap of three total attempts."
+          WORKFLOW_DESCRIPTION: "Merge queue failure analyzer. When the monitored CI workflow fails on a\nmerge-queue branch, this agent inspects the failed job logs, classifies the\nfailure, comments on the affected PRs, and maintains a ledger of known\nflakes on a tracker issue. Clearly transient infrastructure failures on\n approved PRs may be re-enqueued as fresh queue attempts, up to three total\n queue attempts for an unchanged head."
           HAS_PATCH: ${{ needs.agent.outputs.has_patch }}
           GH_AW_DETECTION_CONTINUE_ON_ERROR: "true"
           GH_AW_DETECTION_SKIP_PROMPT_SUMMARY: "true"
@@ -1927,7 +1783,7 @@ jobs:
           RUNNER_TEMP: ${{ runner.temp }}
           TRACEPARENT: ${{ env.GITHUB_AW_OTEL_TRACE_ID != '' && env.GITHUB_AW_OTEL_PARENT_SPAN_ID != '' && format('00-{0}-{1}-01', env.GITHUB_AW_OTEL_TRACE_ID, env.GITHUB_AW_OTEL_PARENT_SPAN_ID) || '' }}
           WORKFLOW_NAME: "Merge Queue Failure Analyzer"
-          WORKFLOW_DESCRIPTION: "Merge queue failure analyzer. When the monitored CI workflow completes with\na failure on a merge-queue branch, this agent downloads the failed job's\nlogs, classifies the failure as a flake, a real regression, or unclear\n(including a real-but-not-this-PR's-fault failure like a fuzzer crash),\ncomments on the affected PR(s), and maintains a running ledger of known\nflake classes on a tracker issue. Clearly transient infrastructure failures\nautomatically rerun failed jobs, with a cap of three total attempts."
+          WORKFLOW_DESCRIPTION: "Merge queue failure analyzer. When the monitored CI workflow fails on a\nmerge-queue branch, this agent inspects the failed job logs, classifies the\nfailure, comments on the affected PRs, and maintains a ledger of known\nflakes on a tracker issue. Clearly transient infrastructure failures on\n approved PRs may be re-enqueued as fresh queue attempts, up to three total\n queue attempts for an unchanged head."
           HAS_PATCH: ${{ needs.agent.outputs.has_patch }}
           GH_AW_DETECTION_CONTINUE_ON_ERROR: "true"
         run: |
@@ -2042,8 +1898,8 @@ jobs:
         id: check_membership
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         env:
-          GH_AW_REQUIRED_ROLES: "admin,maintainer,write"
-          GH_AW_ALLOWED_BOTS: "cgwaltersbot[bot]"
+          GH_AW_REQUIRED_ROLES: "admin,maintainer,maintain,write,triage,read"
+          GH_AW_ALLOWED_BOTS: "${{ vars.GH_AW_APP_BOT_SLUG }}"
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
@@ -2053,6 +1909,64 @@ jobs:
             setupGlobals(core, github, context, exec, io, getOctokit);
             const { main } = require(path.join(actionsDir, 'check_membership.cjs'));
             await main();
+
+  queue_reenqueue:
+    needs:
+      - agent
+      - detection
+    if: (!cancelled()) && needs.agent.result != 'skipped' && contains(needs.agent.outputs.output_types, 'queue_reenqueue')
+    runs-on: ubuntu-slim
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - name: Download agent output artifact
+        continue-on-error: true
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          pattern: "{agent,agent-output-fallback}"
+          merge-multiple: true
+          path: ${{ runner.temp }}/gh-aw/safe-jobs/
+      - name: Checkout trusted queue handler
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1 (source v7)
+        env:
+          GH_AW_AGENT_OUTPUT: ${{ runner.temp }}/gh-aw/safe-jobs/agent_output.json
+          GH_AW_APP_BOT_SLUG: ${{ vars.GH_AW_APP_BOT_SLUG }}
+        with:
+          persist-credentials: false
+          ref: ${{ github.event.repository.default_branch }}
+          sparse-checkout: .github/workflows/shared
+          token: ${{ github.token }}
+      - name: Generate App token
+        id: app-token
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
+        env:
+          GH_AW_AGENT_OUTPUT: ${{ runner.temp }}/gh-aw/safe-jobs/agent_output.json
+          GH_AW_APP_BOT_SLUG: ${{ vars.GH_AW_APP_BOT_SLUG }}
+        with:
+          client-id: ${{ vars.GH_AW_APP_CLIENT_ID }}
+          permission-actions: read
+          permission-contents: read
+          permission-merge-queues: write
+          permission-pull-requests: write
+          private-key: ${{ secrets.GH_AW_APP_PRIVATE_KEY }}
+      - name: Validate and re-enqueue target
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0 (source v9)
+        env:
+          GH_AW_AGENT_OUTPUT: ${{ runner.temp }}/gh-aw/safe-jobs/agent_output.json
+          GH_AW_APP_BOT_SLUG: ${{ vars.GH_AW_APP_BOT_SLUG }}
+        with:
+          github-token: ${{ steps.app-token.outputs.token }}
+          script: |
+            const queueReenqueue = require(`${process.env.GITHUB_WORKSPACE}/.github/workflows/shared/queue-reenqueue.cjs`);
+            await queueReenqueue({
+              core,
+              context,
+              github,
+              monitoredWorkflow: 'CI',
+              monitoredWorkflowPath: '.github/workflows/ci.yml',
+              process,
+            });
 
   safe_outputs:
     needs:
@@ -2162,7 +2076,7 @@ jobs:
           GH_AW_ALLOWED_DOMAINS: "api.snapcraft.io,archive.ubuntu.com,azure.archive.ubuntu.com,crl.geotrust.com,crl.globalsign.com,crl.identrust.com,crl.sectigo.com,crl.thawte.com,crl.usertrust.com,crl.verisign.com,crl3.digicert.com,crl4.digicert.com,crls.ssl.com,json-schema.org,json.schemastore.org,keyserver.ubuntu.com,ocsp.digicert.com,ocsp.geotrust.com,ocsp.globalsign.com,ocsp.identrust.com,ocsp.sectigo.com,ocsp.ssl.com,ocsp.thawte.com,ocsp.usertrust.com,ocsp.verisign.com,packagecloud.io,packages.cloud.google.com,packages.microsoft.com,ppa.launchpad.net,s.symcb.com,s.symcd.com,security.ubuntu.com,ts-crl.ws.symantec.com,ts-ocsp.ws.symantec.com,www.googleapis.com"
           GITHUB_SERVER_URL: ${{ github.server_url }}
           GITHUB_API_URL: ${{ github.api_url }}
-          GH_AW_SAFE_OUTPUT_JOBS: "{\"workflow_rerun\":\"\"}"
+          GH_AW_SAFE_OUTPUT_JOBS: "{\"queue_reenqueue\":\"\"}"
           GH_AW_SAFE_OUTPUTS_HANDLER_CONFIG: "{\"add_comment\":{\"max\":4,\"target\":\"*\"},\"create_report_incomplete_issue\":{},\"missing_data\":{},\"missing_tool\":{},\"noop\":{\"max\":1,\"report-as-issue\":\"true\"},\"report_incomplete\":{},\"update_issue\":{\"allow_body\":true,\"max\":1,\"required_labels\":[\"agent/flake-tracker\"],\"target\":\"*\"}}"
         with:
           github-token: ${{ steps.safe-outputs-app-token.outputs.token }}
@@ -2183,57 +2097,3 @@ jobs:
             /tmp/gh-aw/temporary-id-map.json
             /tmp/gh-aw/safe-output-errors.json
           if-no-files-found: ignore
-
-  workflow_rerun:
-    needs:
-      - agent
-      - detection
-    if: (!cancelled()) && needs.agent.result != 'skipped' && contains(needs.agent.outputs.output_types, 'workflow_rerun')
-    runs-on: ubuntu-latest
-    permissions:
-      actions: read
-      contents: read
-    steps:
-      - name: Download agent output artifact
-        continue-on-error: true
-        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
-        with:
-          pattern: "{agent,agent-output-fallback}"
-          merge-multiple: true
-          path: ${{ runner.temp }}/gh-aw/safe-jobs/
-      - name: Checkout trusted rerun handler
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1 (source v7)
-        env:
-          GH_AW_AGENT_OUTPUT: ${{ runner.temp }}/gh-aw/safe-jobs/agent_output.json
-        with:
-          persist-credentials: false
-          ref: ${{ github.event.repository.default_branch }}
-          token: ${{ github.token }}
-      - name: Generate App token
-        id: app-token
-        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
-        env:
-          GH_AW_AGENT_OUTPUT: ${{ runner.temp }}/gh-aw/safe-jobs/agent_output.json
-        with:
-          client-id: ${{ vars.GH_AW_APP_CLIENT_ID }}
-          permission-actions: write
-          private-key: ${{ secrets.GH_AW_APP_PRIVATE_KEY }}
-      - name: Validate and rerun monitored workflow
-        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0 (source v9)
-        env:
-          GH_AW_AGENT_OUTPUT: ${{ runner.temp }}/gh-aw/safe-jobs/agent_output.json
-        with:
-          github-token: ${{ steps.app-token.outputs.token }}
-          script: |
-            const rerunWorkflow = require(
-              `${process.env.GITHUB_WORKSPACE}/.github/workflows/shared/workflow-rerun.cjs`,
-            );
-            await rerunWorkflow({
-              core,
-              context,
-              expectedEvent: 'merge_group',
-              github,
-              monitoredWorkflow: 'CI',
-              monitoredWorkflowPath: '.github/workflows/ci.yml',
-              process,
-            });

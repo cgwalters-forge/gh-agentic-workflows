@@ -2,7 +2,7 @@
 import-schema:
   expected-event:
     type: choice
-    options: [pull_request, merge_group]
+    options: [pull_request]
     required: true
   monitored-workflow:
     type: string
@@ -49,6 +49,7 @@ safe-outputs:
             client-id: ${{ vars.GH_AW_APP_CLIENT_ID }}
             private-key: ${{ secrets.GH_AW_APP_PRIVATE_KEY }}
             permission-actions: write
+            permission-pull-requests: read
         - name: Validate and rerun monitored workflow
           uses: actions/github-script@v9
           with:

@@ -1,6 +1,7 @@
 'use strict';
 
 const fs = require('fs');
+const approvalGate = require('./approval-gate.cjs');
 
 const MAX_RUN_ATTEMPTS = 3;
 
@@ -49,6 +50,10 @@ module.exports = async function rerunWorkflow({
     core.setFailed(`Refusing rerun from unsupported event ${context.eventName}`);
     return;
   }
+  if (expectedEvent !== 'pull_request') {
+    core.setFailed(`Refusing rerun for ${expectedEvent}: merge-group runs must be re-enqueued as a fresh queue entry`);
+    return;
+  }
   const { id: runId, run_attempt: triggerAttempt } = context.payload.workflow_run ?? {};
   if (!/^[1-9]\d*$/.test(String(runId))) {
     core.setFailed('Trigger did not provide a numeric workflow run ID');
@@ -68,7 +73,7 @@ module.exports = async function rerunWorkflow({
   }
 
   if (run.repository?.full_name !== context.payload.repository?.full_name ||
-      run.event !== expectedEvent ||
+      run.event !== 'pull_request' ||
       run.name !== monitoredWorkflow ||
       run.path !== monitoredWorkflowPath ||
       run.status !== 'completed' ||
@@ -82,6 +87,37 @@ module.exports = async function rerunWorkflow({
   }
   if (!Number.isInteger(run.run_attempt) || run.run_attempt >= MAX_RUN_ATTEMPTS) {
     core.setFailed(`Refusing rerun: attempt ${run.run_attempt} has reached the ${MAX_RUN_ATTEMPTS}-attempt cap`);
+    return;
+  }
+
+  // Approval can change while the agent is inspecting logs. Re-check GitHub's
+  // authoritative decision immediately before granting Actions write access.
+  let prs;
+  try {
+    prs = await approvalGate.regularPullRequests(github, context, run);
+  } catch (error) {
+    core.setFailed(`Unable to re-check pull request approval: ${error.message}`);
+    return;
+  }
+  if (!prs?.length) {
+    core.setFailed('Refusing rerun: affected pull requests are not currently approved');
+    return;
+  }
+  let approved;
+  try {
+    approved = await Promise.all(prs.map(async (pr) => {
+      const result = await github.graphql(`query($owner: String!, $repo: String!, $number: Int!) {
+        repository(owner: $owner, name: $repo) { pullRequest(number: $number) { state reviewDecision headRefOid } }
+      }`, { owner: context.repo.owner, repo: context.repo.repo, number: pr.number });
+      const current = result?.repository?.pullRequest;
+      return current?.state === 'OPEN' && current.reviewDecision === 'APPROVED' && current.headRefOid === run.head_sha;
+    }));
+  } catch (error) {
+    core.setFailed(`Unable to re-check pull request approval: ${error.message}`);
+    return;
+  }
+  if (!approved.every(Boolean)) {
+    core.setFailed('Refusing rerun: affected pull requests are not currently approved');
     return;
   }
 

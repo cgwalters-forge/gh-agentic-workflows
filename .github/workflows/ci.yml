@@ -17,11 +17,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
 
-      - name: Test workflow rerun safe output
+      - name: Test trusted workflow helpers
         run: |
           node --check .github/workflows/shared/workflow-rerun.cjs
+           node --check .github/workflows/shared/approval-gate.cjs
+           node --check .github/workflows/shared/queue-reenqueue.cjs
           node --check tests/workflow-rerun.test.js
+           node --check tests/approval-gate.test.js
+           node --check tests/queue-reenqueue.test.js
           node tests/workflow-rerun.test.js
+           node tests/approval-gate.test.js
+           node tests/queue-reenqueue.test.js
 
       - name: Install gh-aw extension
         env:
