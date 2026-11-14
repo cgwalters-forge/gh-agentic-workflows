@@ -18,7 +18,7 @@ safe-outputs:
         transient infrastructure failure. Choose failed to rerun only failed
         jobs, or all to rerun every job. The target run is derived from this
         workflow's trigger and cannot be selected by the agent.
-      runs-on: ubuntu-latest
+      runs-on: ubuntu-26.04
       permissions:
         actions: read
         contents: read
@@ -48,6 +48,7 @@ safe-outputs:
           with:
             client-id: ${{ vars.GH_AW_APP_CLIENT_ID }}
             private-key: ${{ secrets.GH_AW_APP_PRIVATE_KEY }}
+            repositories: ${{ github.event.repository.name }}
             permission-actions: write
         - name: Validate and rerun monitored workflow
           uses: actions/github-script@v9

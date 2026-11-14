@@ -46,6 +46,7 @@ permissions:
   issues: read
   pull-requests: read
 
+runs-on: ubuntu-26.04
 imports:
   - shared/defaults.md
   # just and the gh-aw CLI, for recompiling lock files
@@ -56,6 +57,9 @@ tools:
     toolsets: [default]
 
 safe-outputs:
+  # The detection job defaults to ubuntu-latest rather than following runs-on.
+  threat-detection:
+    runs-on: ubuntu-26.04
   github-app:
     client-id: ${{ vars.GH_AW_APP_CLIENT_ID }}
     private-key: ${{ secrets.GH_AW_APP_PRIVATE_KEY }}
@@ -91,7 +95,7 @@ jobs:
   add_working_label:
     needs: pre_activation
     if: needs.pre_activation.outputs.activated == 'true'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     permissions:
       pull-requests: write
     steps:
@@ -101,6 +105,8 @@ jobs:
         with:
           client-id: ${{ vars.GH_AW_APP_CLIENT_ID }}
           private-key: ${{ secrets.GH_AW_APP_PRIVATE_KEY }}
+          repositories: ${{ github.event.repository.name }}
+          permission-pull-requests: write
       - name: Add agent/fix-working label
         # PR_NUMBER/REPO must be passed via env: rather than inlined
         # directly into the run: script below (as `${{ github.* }}`): see
@@ -129,7 +135,7 @@ jobs:
     # (see above) remove the cross-workflow collision; this condition is
     # defense-in-depth against the same class of bug recurring.
     if: always() && needs.pre_activation.outputs.activated == 'true'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     permissions:
       pull-requests: write
     steps:
@@ -139,6 +145,8 @@ jobs:
         with:
           client-id: ${{ vars.GH_AW_APP_CLIENT_ID }}
           private-key: ${{ secrets.GH_AW_APP_PRIVATE_KEY }}
+          repositories: ${{ github.event.repository.name }}
+          permission-pull-requests: write
       - name: Remove agent/fix-working label (best-effort)
         # See the "Add agent/fix-working label" step above for why
         # PR_NUMBER/REPO are passed via env: instead of inlined in run:.
