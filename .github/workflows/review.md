@@ -16,6 +16,7 @@ permissions:
   issues: read
   pull-requests: read
 
+runs-on: ubuntu-26.04
 imports:
   - shared/defaults.md
 tools:
@@ -28,6 +29,9 @@ tools:
     trusted-users: ["${{ vars.GH_AW_APP_BOT_SLUG }}"]
 
 safe-outputs:
+  # The detection job defaults to ubuntu-latest rather than following runs-on.
+  threat-detection:
+    runs-on: ubuntu-26.04
   github-app:
     client-id: ${{ vars.GH_AW_APP_CLIENT_ID }}
     private-key: ${{ secrets.GH_AW_APP_PRIVATE_KEY }}
@@ -35,6 +39,8 @@ safe-outputs:
     max: 1
   add-labels:
     max: 1
+    # v1.2 counts calls separately from labels; never apply both verdicts.
+    max-labels: 1
     allowed: ["agent/fixme", "agent/lgtm"]
   remove-labels:
     max: 2
@@ -48,7 +54,7 @@ jobs:
   add_working_label:
     needs: pre_activation
     if: needs.pre_activation.outputs.activated == 'true'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     permissions:
       pull-requests: write
     steps:
@@ -58,6 +64,8 @@ jobs:
         with:
           client-id: ${{ vars.GH_AW_APP_CLIENT_ID }}
           private-key: ${{ secrets.GH_AW_APP_PRIVATE_KEY }}
+          repositories: ${{ github.event.repository.name }}
+          permission-pull-requests: write
       - name: Add agent/review-working label
         # PR_NUMBER/REPO must be passed via env: rather than inlined
         # directly into the run: script below (as `${{ github.* }}`): see
@@ -79,7 +87,7 @@ jobs:
     # never started from clearing an in-progress signal it never set. See
     # fix.md's equivalent job for the live incident this defends against.
     if: always() && needs.pre_activation.outputs.activated == 'true'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     permissions:
       pull-requests: write
     steps:
@@ -89,6 +97,8 @@ jobs:
         with:
           client-id: ${{ vars.GH_AW_APP_CLIENT_ID }}
           private-key: ${{ secrets.GH_AW_APP_PRIVATE_KEY }}
+          repositories: ${{ github.event.repository.name }}
+          permission-pull-requests: write
       - name: Remove agent/review-working label (best-effort)
         # See the "Add agent/review-working label" step above for why
         # PR_NUMBER/REPO are passed via env: instead of inlined in run:.

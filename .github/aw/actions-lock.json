@@ -1,14 +1,24 @@
 {
   "entries": {
-    "github/gh-aw-actions/setup-cli@v0.90.1": {
-      "repo": "github/gh-aw-actions/setup-cli",
-      "version": "v0.90.1",
-      "sha": "7c1d4b7ab319216ef4a931cc3dcb0d7245144ff1"
+    "actions/create-github-app-token@v3.2.0": {
+      "repo": "actions/create-github-app-token",
+      "version": "v3.2.0",
+      "sha": "bcd2ba49218906704ab6c1aa796996da409d3eb1"
     },
-    "github/gh-aw-actions/setup@v0.90.1": {
+    "bootc-dev/actions/bootc-ubuntu-setup@main": {
+      "repo": "bootc-dev/actions/bootc-ubuntu-setup",
+      "version": "main",
+      "sha": "a98a2fdc4291c1c9ed2bdfef8c7f7b75d00572ea"
+    },
+    "github/gh-aw-actions/setup-cli@v1.2.2": {
+      "repo": "github/gh-aw-actions/setup-cli",
+      "version": "v1.2.2",
+      "sha": "53d0749e19424a918acd82b4d140264ce48f2f14"
+    },
+    "github/gh-aw-actions/setup@v1.2.2": {
       "repo": "github/gh-aw-actions/setup",
-      "version": "v0.90.1",
-      "sha": "7c1d4b7ab319216ef4a931cc3dcb0d7245144ff1"
+      "version": "v1.2.2",
+      "sha": "53d0749e19424a918acd82b4d140264ce48f2f14"
     }
   },
   "containers": {

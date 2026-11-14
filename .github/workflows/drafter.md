@@ -15,6 +15,7 @@ permissions:
   contents: read
   issues: read
 
+runs-on: ubuntu-26.04
 imports:
   - shared/defaults.md
   # just and the gh-aw CLI, for recompiling lock files
@@ -25,6 +26,9 @@ tools:
     toolsets: [issues]
 
 safe-outputs:
+  # The detection job defaults to ubuntu-latest rather than following runs-on.
+  threat-detection:
+    runs-on: ubuntu-26.04
   github-app:
     client-id: ${{ vars.GH_AW_APP_CLIENT_ID }}
     private-key: ${{ secrets.GH_AW_APP_PRIVATE_KEY }}
@@ -67,7 +71,7 @@ jobs:
   add_working_label:
     needs: pre_activation
     if: needs.pre_activation.outputs.activated == 'true'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     permissions:
       issues: write
     steps:
@@ -77,6 +81,8 @@ jobs:
         with:
           client-id: ${{ vars.GH_AW_APP_CLIENT_ID }}
           private-key: ${{ secrets.GH_AW_APP_PRIVATE_KEY }}
+          repositories: ${{ github.event.repository.name }}
+          permission-issues: write
       - name: Add agent/drafter-working label
         # ISSUE_NUMBER/REPO must be passed via env: rather than inlined
         # directly into the run: script below (as `${{ github.* }}`): gh-aw's
@@ -104,7 +110,7 @@ jobs:
     # PRs -- a bare `if: always()` there was found to strip a *different*,
     # still-running workflow's label out from under it.
     if: always() && needs.pre_activation.outputs.activated == 'true'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     permissions:
       issues: write
     steps:
@@ -114,6 +120,8 @@ jobs:
         with:
           client-id: ${{ vars.GH_AW_APP_CLIENT_ID }}
           private-key: ${{ secrets.GH_AW_APP_PRIVATE_KEY }}
+          repositories: ${{ github.event.repository.name }}
+          permission-issues: write
       - name: Remove agent/drafter-working label (best-effort)
         # See the "Add agent/drafter-working label" step above for why
         # ISSUE_NUMBER/REPO are passed via env: instead of inlined in run:.
